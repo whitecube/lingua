@@ -1,4 +1,4 @@
-# Lingua - __Language Codes Converter__
+# Lingua - Language Codes Converter
 
 **Disclaimer**: this is still a work in progress. Current state **does not work** yet.
 
@@ -8,7 +8,7 @@ The Lingua converter works in two stages: first you'll need to instanciate it by
 
 ### Setters
 
-```
+```php
 use WhiteCube\Lingua\Service as Lingua;
 
 // Create a converter, without knowing the original format (this will try to guess it for you)
@@ -34,9 +34,9 @@ $language->fromNative('français');
 **Reminder**: this does not work yet since we didn't make the languages repository yet.
 
 
-## Formatting
+### Formatting
 
-```
+```php
 use WhiteCube\Lingua\Service as Lingua;
 
 //  Format a language in a human readable string (the language's english name)
