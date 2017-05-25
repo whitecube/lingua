@@ -16,40 +16,86 @@ $language = Lingua::create('en_GB');
 
 // Create a converter from a language name
 $language = Lingua::createFromName('french');
-// or
-$language = new Lingua();
-$language->fromName('german');
+$language = (new Lingua())->fromName('german');
 
 // Create a convert from tha language's native name
 $language = Lingua::createFromNative('nederlands');
-// or
-$language = new Lingua();
-$language->fromNative('français');
+$language = (new Lingua())->fromNative('magyar');
 
 /*
     ... other ISO, W3C & PHP methods are to come.
 */
 ```
-
-**Reminder**: this does not work yet since we didn't make the languages repository yet.
-
 
 ### Formatting
 
 ```php
 use WhiteCube\Lingua\Service as Lingua;
 
+$language = Lingua::createFromNative('français');
+
 //  Format a language in a human readable string (the language's english name)
-Lingua::createFromNative('français')
-    ->toName(); // Outputs "french"
+echo $language->toName(); // "french"
 
 //  Format a language in its native form
-Lingua::createFromName('german')
-    ->toNative(); // Outputs "deutsch"
+echo $language->toNative(); // "français"
 
 /*
     ... other ISO, W3C & PHP methods are to come.
 */
 ```
 
-**Reminder**: this does not work yet since we didn't make the languages repository yet.
+#### Default formatting
+
+Lingua instances can be automatically transformed to strings without calling any formatting method. 
+
+The **default format** is set to `name`, this means you can use Lingua instances as strings and the `toName()` method will be called out of the box.
+
+Available formats are:
+
+- `name`
+- `native`
+- other formats are coming soon.
+
+```php
+use WhiteCube\Lingua\Service as Lingua;
+
+$language = Lingua::createFromName('italian');
+echo $language; // "italian"
+```
+
+You can change this default behavior by calling the static `setFormat` method. 
+
+```php
+use WhiteCube\Lingua\Service as Lingua;
+
+$language = Lingua::createFromName('italian');
+echo $language; // "italian"
+
+Lingua::setFormat('native');
+echo $language; // "italiano"
+```
+
+Additionally it is also possible to specify a desired format during the instanciation of Lingua. This **will always ignore the default formatting**, even if you just called the static `setFormat` method.
+
+```php
+use WhiteCube\Lingua\Service as Lingua;
+
+$language = new Lingua('native');
+$language->fromName('kashmiri');
+echo $language; // "कश्मीरी, كشميري‎"
+
+// Trying to change the default formatting
+Lingua::setFormat('name');
+
+echo $language; // still "कश्मीरी, كشميري‎"
+echo $language->toName(); // "kashmiri"
+```
+
+This behavior is also possible with the static `create` methods. You can specify the desired formatting as second parameter.
+
+```php
+use WhiteCube\Lingua\Service as Lingua;
+
+echo Lingua::createFromName('maltese', 'native'); // "malti"
+```

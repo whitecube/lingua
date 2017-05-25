@@ -4,7 +4,7 @@ namespace WhiteCube\Lingua;
 
 class Service
 {
-    static protected $defaultFormat = 'W3C';
+    static protected $defaultFormat = 'name';
 
     protected $output;
 
@@ -12,13 +12,12 @@ class Service
 
     public function __construct($output = null)
     {
-        $this->output = is_null($output) ? static::$defaultFormat : $output;
+        $this->output = $output;
     }
 
     public function __toString()
     {
-        //  TODO : this is not correct, should call $this->convert();
-        return call_user_func([$this->converter, 'to' . ucfirst($this->output)]);
+        return $this->convert($this->output ?? self::$defaultFormat);
     }
 
     public function __call($method, $arguments = [])
@@ -32,8 +31,8 @@ class Service
     public static function __callStatic($method, $arguments = [])
     {
         $method = self::sanitizeInstanciationMethod($method);
-        $instance = new static();
-        call_user_func_array([$instance, $method], $arguments);
+        $instance = new static(count($arguments) == 2 ? $arguments[1] : null);
+        call_user_func_array([$instance, $method], [$arguments[0]]);
         return $instance;
     }
 
@@ -80,7 +79,8 @@ class Service
     */
     static protected function transformConverterMethod($method, $prefix)
     {
-        $converter = __NAMESPACE__ . '\\' . ucfirst(trim(substr(strtolower($method), strlen($prefix)), '_')) . 'Converter';
+        $method = strpos($method, $prefix) === 0 ? substr($method, strlen($prefix)) : $method;
+        $converter = __NAMESPACE__ . '\\' . ucfirst(trim(strtolower($method), '_')) . 'Converter';
         if (!class_exists($converter)) {
             throw new \Exception('Call to undefined "'. $prefix . '" Lingua method');
         }
