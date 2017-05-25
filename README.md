@@ -1,6 +1,10 @@
 # Lingua - Language Codes Converter
 
-**Disclaimer**: this is still a work in progress. Current state **does not work** yet.
+This package will convert languages _from and to_ some common formats (ISO codes, W3C standards, PHP localization strings), including human-readable strings.
+
+We are working on a _format guesser_, which will try to automatically understand the format it receives. This could be pretty useful when trying to parse user content.
+
+**Disclaimer**: this is still a work in progress.
 
 ## Usage
 
@@ -51,11 +55,7 @@ Lingua instances can be automatically transformed to strings without calling any
 
 The **default format** is set to `name`, this means you can use Lingua instances as strings and the `toName()` method will be called out of the box.
 
-Available formats are:
-
-- `name`
-- `native`
-- other formats are coming soon.
+Available formats are: `name`, `native`. Other formats are coming soon.
 
 ```php
 use WhiteCube\Lingua\Service as Lingua;
