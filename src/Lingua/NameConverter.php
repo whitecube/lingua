@@ -33,6 +33,6 @@ class NameConverter extends Converter implements ConverterInterface
         if(!$converter->repository) {
             throw new Exception('Language "' . $converter->getName() . '" could not be converted to its english name, because it is not registered in the Lingua repository');
         }
-        return $converter->repository->name;
+        return $converter->repository['name'];
     }
 }
