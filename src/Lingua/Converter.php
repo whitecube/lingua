@@ -10,6 +10,8 @@ class Converter
 
     public $iso_639_1;
 
+    public $iso_639_2t;
+
     public function __construct($format)
     {
         $this->original = static::prepare($format);
@@ -19,6 +21,8 @@ class Converter
     public function getName()
     {
         if($this->repository) return $this->repository->name;
+        if($this->iso_639_1) return $this->iso_639_1;
+        if($this->iso_639_2t) return $this->iso_639_2t;
     }
 
     public function validate()

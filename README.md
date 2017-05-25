@@ -31,6 +31,16 @@ $language = (new Lingua())->fromNative('magyar');
 $language = Lingua::createFromISO_639_1('mk');
 $language = (new Lingua())->fromISO_639_1('ko');
 
+// Create a converter from a ISO 639-2t code
+// Note: this will not throw an error if the iso-code is not defined in the language repository
+$language = Lingua::createFromISO_639_2t('heb');
+$language = (new Lingua())->fromISO_639_2t('gle');
+
+// Create a converter from a ISO 639-2b code
+// Note: this will not throw an error if the iso-code is not defined in the language repository
+$language = Lingua::createFromISO_639_2b('her');
+$language = (new Lingua())->fromISO_639_2b('iku');
+
 /*
     ... other ISO, W3C & PHP methods are to come.
 */
@@ -53,6 +63,12 @@ echo $language->toNative(); // "français"
 
 // Format a language in a ISO 639-1 string
 echo $language->toISO_639_1(); // "fr"
+
+// Format a language in a ISO 639-2t string
+echo $language->toISO_639_2t(); // "fra"
+
+// Format a language in a ISO 639-2b string
+echo $language->toISO_639_2b(); // "fre"
 
 /*
     ... other ISO, W3C & PHP methods are to come.
