@@ -4,11 +4,6 @@ namespace WhiteCube\Lingua;
 
 class NativeConverter extends Converter implements ConverterInterface
 {
-    public static function prepare(string $string)
-    {
-        return strtolower(trim($string));
-    }
-
     public static function check(string $format)
     {
         if(LanguagesRepository::find('native', self::prepare($format))) return true;
@@ -26,6 +21,7 @@ class NativeConverter extends Converter implements ConverterInterface
     public function parse()
     {
         $this->repository = LanguagesRepository::find('native', $this->original);
+        $this->iso_639_1 = $this->repository['iso-639-1'];
     }
 
     public static function format(ConverterInterface $converter)

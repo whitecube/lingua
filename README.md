@@ -22,9 +22,14 @@ $language = Lingua::create('en_GB');
 $language = Lingua::createFromName('french');
 $language = (new Lingua())->fromName('german');
 
-// Create a convert from tha language's native name
+// Create a converter from a language's native name
 $language = Lingua::createFromNative('nederlands');
 $language = (new Lingua())->fromNative('magyar');
+
+// Create a converter from a ISO 639-1 code
+// Note: this will not throw an error if the iso-code is not defined in the language repository
+$language = Lingua::createFromISO_639_1('mk');
+$language = (new Lingua())->fromISO_639_1('ko');
 
 /*
     ... other ISO, W3C & PHP methods are to come.
@@ -38,11 +43,16 @@ use WhiteCube\Lingua\Service as Lingua;
 
 $language = Lingua::createFromNative('français');
 
-//  Format a language in a human readable string (the language's english name)
+// Format a language in a human readable string (the language's english name)
+// Note: this will trigger an exception if $language has no equivalency in the languages repository
 echo $language->toName(); // "french"
 
-//  Format a language in its native form
+// Format a language in its native form
+// Note: this will trigger an exception if $language has no equivalency in the languages repository
 echo $language->toNative(); // "français"
+
+// Format a language in a ISO 639-1 string
+echo $language->toISO_639_1(); // "fr"
 
 /*
     ... other ISO, W3C & PHP methods are to come.
@@ -55,7 +65,7 @@ Lingua instances can be automatically transformed to strings without calling any
 
 The **default format** is set to `name`, this means you can use Lingua instances as strings and the `toName()` method will be called out of the box.
 
-Available formats are: `name`, `native`. Other formats are coming soon.
+Available formats are: `name`, `native`, `iso-639-1`. Other formats are coming soon.
 
 ```php
 use WhiteCube\Lingua\Service as Lingua;
@@ -69,7 +79,7 @@ You can change this default behavior by calling the static `setFormat` method.
 ```php
 use WhiteCube\Lingua\Service as Lingua;
 
-$language = Lingua::createFromName('italian');
+$language = Lingua::createFromISO_639_1('it');
 echo $language; // "italian"
 
 Lingua::setFormat('native');
@@ -82,7 +92,7 @@ Additionally it is also possible to specify a desired format during the instanci
 use WhiteCube\Lingua\Service as Lingua;
 
 $language = new Lingua('native');
-$language->fromName('kashmiri');
+$language->fromISO_639_1('ks');
 echo $language; // "कश्मीरी, كشميري‎"
 
 // Trying to change the default formatting

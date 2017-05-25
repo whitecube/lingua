@@ -80,7 +80,8 @@ class Service
     static protected function transformConverterMethod($method, $prefix)
     {
         $method = strpos($method, $prefix) === 0 ? substr($method, strlen($prefix)) : $method;
-        $converter = __NAMESPACE__ . '\\' . ucfirst(trim(strtolower($method), '_')) . 'Converter';
+        $method = ucfirst(str_replace('-', '_', trim(strtolower($method), '_')));
+        $converter = __NAMESPACE__ . '\\' . $method . 'Converter';
         if (!class_exists($converter)) {
             throw new \Exception('Call to undefined "'. $prefix . '" Lingua method');
         }
@@ -111,12 +112,6 @@ class Service
     }
 
     /**
-    public function fromISO639_1($iso)
-    {
-        $this->setFormatLookup('ISO639-1', $iso);
-        return $this;
-    }
-
     public function fromISO639_2t($iso)
     {
         $this->setFormatLookup('ISO639-2/t', $iso);
