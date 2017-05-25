@@ -4,13 +4,13 @@ namespace WhiteCube\Lingua;
 
 interface ConverterInterface
 {
-    protected static function prepare(string $string);
+    static function prepare(string $string);
 
-    public static function check(string $format);
+    static function check(string $format);
 
-    public function validate();
+    function validate();
 
-    public function format(ConverterInterface $converter);
+    function parse();
 
-    public function parse();
+    static function format(ConverterInterface $converter);
 }

@@ -10,7 +10,7 @@ class Converter
 
     public function __construct($format)
     {
-        $this->original = self::prepare($format);
+        $this->original = static::prepare($format);
         if($this->validate()) $this->parse();
     }
 
@@ -19,12 +19,11 @@ class Converter
         if($this->repository) return $this->repository->name;
     }
 
-    protected function validate()
+    public function validate()
     {
-        if(!self::check($this->original)) {
-            throw new \Exception('Unable to create language from "' . $this->original . '".');
+        if(!static::check($this->original)) {
+            throw new \Exception('Unable to create language from "' . $this->original . '"');
         }
         return true;
     }
-
 }

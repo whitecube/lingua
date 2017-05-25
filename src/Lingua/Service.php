@@ -13,7 +13,6 @@ class Service
     public function __construct($output = null)
     {
         $this->output = is_null($output) ? static::$defaultFormat : $output;
-        $this->converter = new Converter();
     }
 
     public function __toString()
@@ -25,7 +24,7 @@ class Service
     {
         if(strpos($method, 'from') == 0) return $this->makeConverter($method, $arguments);
         if(strpos($method, 'to') == 0) return $this->convert($method, $arguments);
-        throw new \Exception('Call to undefined Lingua method.');
+        throw new \Exception('Call to undefined Lingua method');
         
     }
 
@@ -33,9 +32,6 @@ class Service
     {
         $method = self::sanitizeInstanciationMethod($method);
         $instance = new static();
-        if(!method_exists($instance, $method)) {
-            throw new \Exception('Call to undefined instanciation method.');
-        }
         call_user_func_array([$instance, $method], $arguments);
         return $instance;
     }
@@ -70,22 +66,22 @@ class Service
     static protected function sanitizeInstanciationMethod($method)
     {
         if (strpos($method, 'create') < 0) {
-            throw new \Exception('Instanciation methods should begin with "create".');
+            throw new \Exception('Instanciation methods should begin with "create"');
         }
         return lcfirst(trim(substr($method, 6), '_'));
     }
 
     /**
     * Transforms a method name to converter name
-    * @param string $prefix
     * @param string $method
+    * @param string $prefix
     * @return string
     */
-    static protected function transformConverterMethod($prefix, $method)
+    static protected function transformConverterMethod($method, $prefix)
     {
-        $converter = __NAMESPACE__ . ucfirst(trim(substr(strtolower($method), strlen($prefix)), '_')) . 'Converter';
+        $converter = __NAMESPACE__ . '\\' . ucfirst(trim(substr(strtolower($method), strlen($prefix)), '_')) . 'Converter';
         if (!class_exists($converter)) {
-            throw new \Exception('Call to undefined "'. $prefix . '" Lingua method.');
+            throw new \Exception('Call to undefined "'. $prefix . '" Lingua method');
         }
         return $converter;
     }
