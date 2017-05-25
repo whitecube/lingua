@@ -17,13 +17,14 @@ class Service
 
     public function __toString()
     {
+        //  TODO : this is not correct, should call $this->convert();
         return call_user_func([$this->converter, 'to' . ucfirst($this->output)]);
     }
 
     public function __call($method, $arguments = [])
     {
-        if(strpos($method, 'from') == 0) return $this->makeConverter($method, $arguments);
-        if(strpos($method, 'to') == 0) return $this->convert($method, $arguments);
+        if(strpos($method, 'from') === 0) return $this->makeConverter($method, $arguments);
+        if(strpos($method, 'to') === 0) return $this->convert($method, $arguments);
         throw new \Exception('Call to undefined Lingua method');
         
     }
