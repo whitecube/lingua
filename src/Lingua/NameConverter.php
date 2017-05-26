@@ -30,8 +30,14 @@ class NameConverter extends Converter implements ConverterInterface
     public static function format(ConverterInterface $converter)
     {
         if(!$converter->repository) {
-            throw new \Exception('Language "' . $converter->getName() . '" could not be converted to its english name since it is not registered in the Lingua repository');
+            throw new \Exception('Language "' . $converter . '" could not be converted to its english name since it is not registered in the Lingua repository');
         }
-        return $converter->repository['name'];
+        $string = $converter->repository['name'];
+        if(!$converter->script->name && !$converter->country->name) return $string;
+        $string .= ' (';
+        if($converter->script->name) $string .= $converter->script->name;
+        if($converter->script->name && $converter->country->name) $string .= ', ';
+        if($converter->country->name) $string .= $converter->country->name;
+        return $string . ')';
     }
 }

@@ -16,6 +16,7 @@ Available **input and output formats** are:
 4. `ISO-639-2t`: An official three-letters code for terminology applications (ISO 639-2/T) for the language.
 5. `ISO-639-2b`: An official three-letters code for bibliographic applications (ISO 639-2/B) for the language.
 6. `ISO-639-3`: The official three-letters code. This is also the most common terminology and therefore the most complete language representation. In most cases, this is the same format as `ISO-639-2t`, except for macrolanguages. 
+7. `W3C`: A [valid](https://r12a.github.io/app-subtags/) string as described by the BCP 47 specification (used in the [W3C](https://www.w3.org/International/questions/qa-html-language-declarations#langvalues)'s language attributes recommendations).
 
 **Note on macrolanguages**: The `ISO-639-3` output will also indicate the amount of sub-languages represented with the same ISO code.
 
@@ -40,27 +41,27 @@ $language = Lingua::createFromNative('nederlands');
 $language = (new Lingua())->fromNative('magyar');
 
 // Create a converter from a ISO 639-1 code
-// Note: this will not throw an error if the iso-code is not defined in the language repository
 $language = Lingua::createFromISO_639_1('mk');
 $language = (new Lingua())->fromISO_639_1('ko');
 
 // Create a converter from a ISO 639-2t code
-// Note: this will not throw an error if the iso-code is not defined in the language repository
 $language = Lingua::createFromISO_639_2t('heb');
 $language = (new Lingua())->fromISO_639_2t('gle');
 
 // Create a converter from a ISO 639-2b code
-// Note: this will not throw an error if the iso-code is not defined in the language repository
 $language = Lingua::createFromISO_639_2b('her');
 $language = (new Lingua())->fromISO_639_2b('iku');
 
 // Create a converter from a ISO 639-3 code
-// Note: this will not throw an error if the iso-code is not defined in the language repository
 $language = Lingua::createFromISO_639_3('aze + 2');
 $language = (new Lingua())->fromISO_639_3('asm');
 
+// Create a converter from a valid W3C language string
+$language = Lingua::createFromW3C('ae');
+$language = (new Lingua())->fromW3C('zh-hans-SG');
+
 /*
-    ... other W3C & PHP methods are to come.
+    ... PHP method is to come.
 */
 ```
 
@@ -91,8 +92,11 @@ echo $language->toISO_639_2b(); // "fre"
 // Format a language in a ISO 639-3 string
 echo $language->toISO_639_3(); // "fra"
 
+// Format a language in a valid W3C language attribute string (according to BCP 47)
+echo $language->toW3C(); // "fr" in this case but could be "fr-BE" if country code was specified
+
 /*
-    ... other W3C & PHP methods are to come.
+    ... PHP methods is to come.
 */
 ```
 
@@ -100,7 +104,7 @@ echo $language->toISO_639_3(); // "fra"
 
 Lingua instances can be automatically transformed to strings without calling any formatting method. 
 
-The **default format** is set to `name`, this means you can use Lingua instances as strings and the `toName()` method will be called out of the box.
+The **default format** is set to `w3c`, this means you can use Lingua instances as strings and the `toName()` method will be called out of the box.
 
 ```php
 use WhiteCube\Lingua\Service as Lingua;
@@ -108,7 +112,7 @@ use WhiteCube\Lingua\Service as Lingua;
 echo Lingua::createFromISO_639_3('ita'); // "italian"
 ```
 
-You can change this default behavior by calling the static `setFormat` method. Available formats are: `name`, `native`, `iso-639-1`, `iso-639-2t`, `iso-639-2b`, `iso-639-3`. Other formats are coming soon.
+You can change this default behavior by calling the static `setFormat` method. Available formats are: `name`, `native`, `iso-639-1`, `iso-639-2t`, `iso-639-2b`, `iso-639-3`, `w3c`. Other formats are coming soon.
 
 ```php
 use WhiteCube\Lingua\Service as Lingua;

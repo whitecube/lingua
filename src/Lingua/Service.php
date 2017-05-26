@@ -4,7 +4,7 @@ namespace WhiteCube\Lingua;
 
 class Service
 {
-    static protected $defaultFormat = 'name';
+    static protected $defaultFormat = 'w3c';
 
     protected $output;
 

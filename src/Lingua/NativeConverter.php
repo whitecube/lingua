@@ -30,7 +30,7 @@ class NativeConverter extends Converter implements ConverterInterface
     public static function format(ConverterInterface $converter)
     {
         if(!$converter->repository) {
-            throw new \Exception('Language "' . $converter->getName() . '" could not be converted to its native name since it is not registered in the Lingua repository');
+            throw new \Exception('Language "' . $converter . '" could not be converted to its native name since it is not registered in the Lingua repository');
         }
         return $converter->repository['native'];
     }

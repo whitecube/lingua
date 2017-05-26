@@ -16,8 +16,14 @@ class Converter
 
     public $iso_639_3;
 
+    public $script;
+
+    public $country;
+
     public function __construct($format)
     {
+        $this->script = $this->getEmptyNameBag();
+        $this->country = $this->getEmptyNameBag();
         $this->original = static::prepare($format);
         if($this->validate()) $this->parse();
     }
@@ -25,15 +31,6 @@ class Converter
     public function __toString()
     {
         return $this->original;
-    }
-
-    public function getName()
-    {
-        if($this->repository) return $this->repository->name;
-        if($this->iso_639_3) return $this->iso_639_3;
-        if($this->iso_639_2t) return $this->iso_639_2t;
-        if($this->iso_639_2b) return $this->iso_639_2b;
-        if($this->iso_639_1) return $this->iso_639_1;
     }
 
     public function validate()
@@ -47,5 +44,13 @@ class Converter
     public static function prepare(string $string)
     {
         return strtolower(trim($string));
+    }
+
+    protected function getEmptyNameBag()
+    {
+        $item = new \stdClass();
+        $item->name = null;
+        $item->code = null;
+        return $item;
     }
 }
