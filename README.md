@@ -16,7 +16,7 @@ The Lingua converter works in two stages: first you'll need to instanciate it by
 use WhiteCube\Lingua\Service as Lingua;
 
 // Create a converter, without knowing the original format (this will try to guess it for you)
-$language = Lingua::create('en_GB');
+$language = Lingua::create('en_GB'); // Not yet working.
 
 // Create a converter from a language name
 $language = Lingua::createFromName('french');
@@ -75,7 +75,7 @@ echo $language->toISO_639_2t(); // "fra"
 // Format a language in a ISO 639-2b string
 echo $language->toISO_639_2b(); // "fre"
 
-// Format a language in a ISO 639-2b string
+// Format a language in a ISO 639-3 string
 echo $language->toISO_639_3(); // "fra"
 
 /*
@@ -89,25 +89,23 @@ Lingua instances can be automatically transformed to strings without calling any
 
 The **default format** is set to `name`, this means you can use Lingua instances as strings and the `toName()` method will be called out of the box.
 
-Available formats are: `name`, `native`, `iso-639-1`, `iso-639-2t`, `iso-639-2b`, `iso-639-3`. Other formats are coming soon.
-
 ```php
 use WhiteCube\Lingua\Service as Lingua;
 
-$language = Lingua::createFromName('italian');
-echo $language; // "italian"
+echo Lingua::createFromISO_639_3('ita'); // "italian"
 ```
 
-You can change this default behavior by calling the static `setFormat` method. 
+You can change this default behavior by calling the static `setFormat` method. Available formats are: `name`, `native`, `iso-639-1`, `iso-639-2t`, `iso-639-2b`, `iso-639-3`. Other formats are coming soon.
 
 ```php
 use WhiteCube\Lingua\Service as Lingua;
 
-$language = Lingua::createFromISO_639_1('it');
-echo $language; // "italian"
-
 Lingua::setFormat('native');
+$language = Lingua::createFromISO_639_3('ita');
 echo $language; // "italiano"
+
+Lingua::setFormat('iso-639-1');
+echo $language; // "it"
 ```
 
 Additionally it is also possible to specify a desired format during the instanciation of Lingua. This **will always ignore the default formatting**, even if you just called the static `setFormat` method.
