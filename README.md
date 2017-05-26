@@ -131,3 +131,21 @@ use WhiteCube\Lingua\Service as Lingua;
 
 echo Lingua::createFromName('maltese', 'native'); // "malti"
 ```
+
+## Contributing
+
+Your help can be precious in order to make this package more accurate! You can contribute on two levels.
+
+### Working on core features
+
+In order to add new features, only well-documented and tested pull-requests will be accepted.
+
+Please open or comment existing issues on this repository in order to report bugs. If you're sure about what you're doing, you can send a pull-request.
+
+### Maintaining the languages repository
+
+There are currently some languages marked with a `// TODO` comment in the `./languages.php` file. This means we probably didn't find enough information about these languages. You know how to fill the gaps? Please let us know! You can open an issue, make a pull-request or contact us on any available platform.
+
+And of course you can also add new languages to the repository, but only if you're sure about the terminology.
+
+Thank you!

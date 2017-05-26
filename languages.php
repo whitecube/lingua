@@ -15,6 +15,8 @@ return [
         'iso-639-2t' => 'abk',
         'iso-639-2b' => 'abk',
         'iso-639-3' => 'abk',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'afar',
@@ -23,6 +25,8 @@ return [
         'iso-639-2t' => 'aar',
         'iso-639-2b' => 'aar',
         'iso-639-3' => 'aar',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'afrikaans',
@@ -31,6 +35,8 @@ return [
         'iso-639-2t' => 'afr',
         'iso-639-2b' => 'afr',
         'iso-639-3' => 'afr',
+        'countries' => ['NA' => 'Namibia', 'ZA' => 'South Africa'],
+        'sets' => []
     ],
     [
         'name' => 'akan',
@@ -39,6 +45,8 @@ return [
         'iso-639-2t' => 'aka',
         'iso-639-2b' => 'aka',
         'iso-639-3' => 'aka + 2',
+        'countries' => ['GH' => 'Ghana'],
+        'sets' => []
     ],
     [
         'name' => 'albanian',
@@ -47,6 +55,8 @@ return [
         'iso-639-2t' => 'sqi',
         'iso-639-2b' => 'alb',
         'iso-639-3' => 'sqi + 4',
+        'countries' => ['AL' => 'Albania'],
+        'sets' => []
     ],
     [
         'name' => 'amharic',
@@ -55,6 +65,8 @@ return [
         'iso-639-2t' => 'amh',
         'iso-639-2b' => 'amh',
         'iso-639-3' => 'amh',
+        'countries' => ['ET' => 'Ethiopia'],
+        'sets' => []
     ],
     [
         'name' => 'arabic',
@@ -63,6 +75,8 @@ return [
         'iso-639-2t' => 'ara',
         'iso-639-2b' => 'ara',
         'iso-639-3' => 'ara + 30',
+        'countries' => ['AE' => 'United Arab Emirates', 'BH' => 'Bahrain', 'DZ' => 'Algeria', 'EG' => 'Egypt', 'IQ' => 'Iraq', 'JO' => 'Jordan', 'KW' => 'Kuwait', 'LB' => 'Lebanon', 'LY' => 'Libya', 'MA' => 'Morocco', 'OM' => 'Oman', 'QA' => 'Qatar', 'SA' => 'Saudi Arabia', 'SD' => 'Sudan', 'SY' => 'Syria', 'TN' => 'Tunisia', 'YE' => 'Yemen'],
+        'sets' => []
     ],
     [
         'name' => 'aragonese',
@@ -71,6 +85,8 @@ return [
         'iso-639-2t' => 'arg',
         'iso-639-2b' => 'arg',
         'iso-639-3' => 'arg',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'armenian',
@@ -79,6 +95,8 @@ return [
         'iso-639-2t' => 'hye',
         'iso-639-2b' => 'arm',
         'iso-639-3' => 'hye',
+        'countries' => ['AM' => 'Armenia'],
+        'sets' => []
     ],
     [
         'name' => 'assamese',
@@ -87,6 +105,18 @@ return [
         'iso-639-2t' => 'asm',
         'iso-639-2b' => 'asm',
         'iso-639-3' => 'asm',
+        'countries' => ['IN' => 'India'],
+        'sets' => []
+    ],
+    [
+        'name' => 'asu',
+        'native' => 'kiathu',
+        'iso-639-1' => '',                      // TODO
+        'iso-639-2t' => '',                     // TODO
+        'iso-639-2b' => '',                     // TODO
+        'iso-639-3' => 'asa',
+        'countries' => ['TZ' => 'Tanzania'],
+        'sets' => []
     ],
     [
         'name' => 'avaric',
@@ -95,6 +125,8 @@ return [
         'iso-639-2t' => 'ava',
         'iso-639-2b' => 'ava',
         'iso-639-3' => 'ava',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'avestan',
@@ -103,6 +135,8 @@ return [
         'iso-639-2t' => 'ave',
         'iso-639-2b' => 'ave',
         'iso-639-3' => 'ave',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'aymara',
@@ -111,6 +145,8 @@ return [
         'iso-639-2t' => 'aym',
         'iso-639-2b' => 'aym',
         'iso-639-3' => 'aym + 2',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'azerbaijani',
@@ -119,6 +155,8 @@ return [
         'iso-639-2t' => 'aze',
         'iso-639-2b' => 'aze',
         'iso-639-3' => 'aze + 2',
+        'countries' => ['AZ' => 'Azerbaijan'],
+        'sets' => ['cyrl' => 'cyrillic', 'latn' => 'latin']
     ],
     [
         'name' => 'bambara',
@@ -127,6 +165,8 @@ return [
         'iso-639-2t' => 'bam',
         'iso-639-2b' => 'bam',
         'iso-639-3' => 'bam',
+        'countries' => ['ML' => 'Mali'],
+        'sets' => []
     ],
     [
         'name' => 'bashkir',
@@ -135,6 +175,8 @@ return [
         'iso-639-2t' => 'bak',
         'iso-639-2b' => 'bak',
         'iso-639-3' => 'bak',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'basque',
@@ -143,6 +185,8 @@ return [
         'iso-639-2t' => 'eus',
         'iso-639-2b' => 'baq',
         'iso-639-3' => 'eus',
+        'countries' => ['ES' => 'Spain'],
+        'sets' => []
     ],
     [
         'name' => 'belarusian',
@@ -151,14 +195,38 @@ return [
         'iso-639-2t' => 'bel',
         'iso-639-2b' => 'bel',
         'iso-639-3' => 'bel',
+        'countries' => ['BY' => 'Belarus'],
+        'sets' => []
     ],
     [
-        'name' => 'bengali, bangla',
+        'name' => 'bemba',
+        'native' => 'chibemba',
+        'iso-639-1' => '',              // TODO
+        'iso-639-2t' => '',             // TODO
+        'iso-639-2b' => '',             // TODO
+        'iso-639-3' => 'bem',
+        'countries' => ['ZM' => 'Zambia'],
+        'sets' => []
+    ],
+    [
+        'name' => 'bena',
+        'native' => 'ekibena',
+        'iso-639-1' => '',              // TODO
+        'iso-639-2t' => '',             // TODO
+        'iso-639-2b' => '',             // TODO
+        'iso-639-3' => 'bez',
+        'countries' => ['TZ' => 'Tanzania'],
+        'sets' => []
+    ],
+    [
+        'name' => 'bengali',
         'native' => 'বাংলা',
         'iso-639-1' => 'bn',
         'iso-639-2t' => 'ben',
         'iso-639-2b' => 'ben',
         'iso-639-3' => 'ben',
+        'countries' => ['BD' => 'Bangladesh', 'IN' => 'India'],
+        'sets' => []
     ],
     [
         'name' => 'bihari',
@@ -166,7 +234,9 @@ return [
         'iso-639-1' => 'bh',
         'iso-639-2t' => 'bih',
         'iso-639-2b' => 'bih',
-        'iso-639-3' => 'bih'
+        'iso-639-3' => 'bih',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'bislama',
@@ -175,6 +245,8 @@ return [
         'iso-639-2t' => 'bis',
         'iso-639-2b' => 'bis',
         'iso-639-3' => 'bis',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'bosnian',
@@ -183,6 +255,8 @@ return [
         'iso-639-2t' => 'bos',
         'iso-639-2b' => 'bos',
         'iso-639-3' => 'bos',
+        'countries' => ['BA' => 'Bosnia and Herzegovina'],
+        'sets' => []
     ],
     [
         'name' => 'breton',
@@ -191,6 +265,8 @@ return [
         'iso-639-2t' => 'bre',
         'iso-639-2b' => 'bre',
         'iso-639-3' => 'bre',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'bulgarian',
@@ -199,6 +275,8 @@ return [
         'iso-639-2t' => 'bul',
         'iso-639-2b' => 'bul',
         'iso-639-3' => 'bul',
+        'countries' => ['BG' => 'Bulgaria'],
+        'sets' => []
     ],
     [
         'name' => 'burmese',
@@ -207,14 +285,28 @@ return [
         'iso-639-2t' => 'mya',
         'iso-639-2b' => 'bur',
         'iso-639-3' => 'mya',
+        'countries' => ['MM' => 'Myanmar [Burma]'],
+        'sets' => []
     ],
     [
-        'name' => 'catalan, valencian',
-        'native' => 'català, valencià',
+        'name' => 'catalan',
+        'native' => 'català',
         'iso-639-1' => 'ca',
         'iso-639-2t' => 'cat',
         'iso-639-2b' => 'cat',
         'iso-639-3' => 'cat',
+        'countries' => ['ES' => 'Spain'],
+        'sets' => []
+    ],
+    [
+        'name' => 'central morocco tamazight',
+        'native' => 'tachelhit',
+        'iso-639-1' => '',              // TODO
+        'iso-639-2t' => '',             // TODO
+        'iso-639-2b' => '',             // TODO
+        'iso-639-3' => 'tzm',
+        'countries' => ['MA' => 'Morocco'],
+        'sets' => ['latn' => 'latin']
     ],
     [
         'name' => 'chamorro',
@@ -223,6 +315,8 @@ return [
         'iso-639-2t' => 'cha',
         'iso-639-2b' => 'cha',
         'iso-639-3' => 'cha',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'chechen',
@@ -231,6 +325,18 @@ return [
         'iso-639-2t' => 'che',
         'iso-639-2b' => 'che',
         'iso-639-3' => 'che',
+        'countries' => [],
+        'sets' => []
+    ],
+    [
+        'name' => 'cherokee',
+        'native' => 'tsalagi',
+        'iso-639-1' => '',              // TODO
+        'iso-639-2t' => '',             // TODO
+        'iso-639-2b' => '',             // TODO
+        'iso-639-3' => 'chr',
+        'countries' => ['US' => 'United States'],
+        'sets' => []
     ],
     [
         'name' => 'chichewa, chewa, nyanja',
@@ -239,6 +345,18 @@ return [
         'iso-639-2t' => 'nya',
         'iso-639-2b' => 'nya',
         'iso-639-3' => 'nya',
+        'countries' => [],
+        'sets' => []
+    ],
+    [
+        'name' => 'chiga',
+        'native' => 'bachiga',
+        'iso-639-1' => '',              // TODO
+        'iso-639-2t' => '',             // TODO
+        'iso-639-2b' => '',             // TODO
+        'iso-639-3' => 'cgg',
+        'countries' => ['UG' => 'Uganda'],
+        'sets' => []
     ],
     [
         'name' => 'chinese',
@@ -247,6 +365,8 @@ return [
         'iso-639-2t' => 'zho',
         'iso-639-2b' => 'chi',
         'iso-639-3' => 'zho + 13',
+        'countries' => ['CN' => 'China', 'HK' => 'Hong Kong SAR China', 'MO' => 'Macau SAR China', 'SG' => 'Singapore', 'TW' => 'Taiwan'],
+        'sets' => ['hans' => 'simplified han', 'hant' => 'traditional han']
     ],
     [
         'name' => 'chuvash',
@@ -255,6 +375,8 @@ return [
         'iso-639-2t' => 'chv',
         'iso-639-2b' => 'chv',
         'iso-639-3' => 'chv',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'cornish',
@@ -263,6 +385,8 @@ return [
         'iso-639-2t' => 'cor',
         'iso-639-2b' => 'cor',
         'iso-639-3' => 'cor',
+        'countries' => ['GB' => 'United Kingdom'],
+        'sets' => []
     ],
     [
         'name' => 'corsican',
@@ -271,6 +395,8 @@ return [
         'iso-639-2t' => 'cos',
         'iso-639-2b' => 'cos',
         'iso-639-3' => 'cos',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'cree',
@@ -279,6 +405,8 @@ return [
         'iso-639-2t' => 'cre',
         'iso-639-2b' => 'cre',
         'iso-639-3' => 'cre + 6',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'croatian',
@@ -287,6 +415,8 @@ return [
         'iso-639-2t' => 'hrv',
         'iso-639-2b' => 'hrv',
         'iso-639-3' => 'hrv',
+        'countries' => ['HR' => 'Croatia'],
+        'sets' => []
     ],
     [
         'name' => 'czech',
@@ -295,6 +425,8 @@ return [
         'iso-639-2t' => 'ces',
         'iso-639-2b' => 'cze',
         'iso-639-3' => 'ces',
+        'countries' => ['CZ' => 'Czech Republic'],
+        'sets' => []
     ],
     [
         'name' => 'danish',
@@ -303,6 +435,8 @@ return [
         'iso-639-2t' => 'dan',
         'iso-639-2b' => 'dan',
         'iso-639-3' => 'dan',
+        'countries' => ['DK' => 'Denmark'],
+        'sets' => []
     ],
     [
         'name' => 'divehi, dhivehi, maldivian',
@@ -311,14 +445,18 @@ return [
         'iso-639-2t' => 'div',
         'iso-639-2b' => 'div',
         'iso-639-3' => 'div',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'dutch',
-        'native' => 'nederlands, vlaams',
+        'native' => 'nederlands',
         'iso-639-1' => 'nl',
         'iso-639-2t' => 'nld',
         'iso-639-2b' => 'dut',
         'iso-639-3' => 'nld',
+        'countries' => ['BE' => 'Belgium', 'NL' => 'Netherlands'],
+        'sets' => []
     ],
     [
         'name' => 'dzongkha',
@@ -327,6 +465,18 @@ return [
         'iso-639-2t' => 'dzo',
         'iso-639-2b' => 'dzo',
         'iso-639-3' => 'dzo',
+        'countries' => [],
+        'sets' => []
+    ],
+    [
+        'name' => 'embu',
+        'native' => 'kiembu',
+        'iso-639-1' => '',              // TODO
+        'iso-639-2t' => '',             // TODO
+        'iso-639-2b' => '',             // TODO
+        'iso-639-3' => 'ebu',
+        'countries' => ['KE' => 'Kenya'],
+        'sets' => []
     ],
     [
         'name' => 'english',
@@ -335,6 +485,8 @@ return [
         'iso-639-2t' => 'eng',
         'iso-639-2b' => 'eng',
         'iso-639-3' => 'eng',
+        'countries' => ['AS' => 'American Samoa', 'AU' => 'Australia', 'BE' => 'Belgium', 'BW' => 'Botswana', 'BZ' => 'Belize', 'CA' => 'Canada', 'GB' => 'United Kingdom', 'GU' => 'Guam', 'HK' => 'Hong Kong SAR China', 'IE' => 'Ireland', 'IN' => 'India', 'JM' => 'Jamaica', 'MH' => 'Marshall Islands', 'MP' => 'Northern Mariana Islands', 'MT' => 'Malta', 'MU' => 'Mauritius', 'NA' => 'Namibia', 'NZ' => 'New Zealand', 'PH' => 'Philippines', 'PK' => 'Pakistan', 'SG' => 'Singapore', 'TT' => 'Trinidad and Tobago', 'UM' => 'U.S. Minor Outlying Islands', 'US' => 'United States', 'VI' => 'U.S. Virgin Islands', 'ZA' => 'South Africa', 'ZW' => 'Zimbabwe'],
+        'sets' => []
     ],
     [
         'name' => 'esperanto',
@@ -343,6 +495,8 @@ return [
         'iso-639-2t' => 'epo',
         'iso-639-2b' => 'epo',
         'iso-639-3' => 'epo',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'estonian',
@@ -351,6 +505,8 @@ return [
         'iso-639-2t' => 'est',
         'iso-639-2b' => 'est',
         'iso-639-3' => 'est + 2',
+        'countries' => ['EE' => 'Estonia'],
+        'sets' => []
     ],
     [
         'name' => 'ewe',
@@ -359,6 +515,8 @@ return [
         'iso-639-2t' => 'ewe',
         'iso-639-2b' => 'ewe',
         'iso-639-3' => 'ewe',
+        'countries' => ['GH' => 'Ghana', 'TG' => 'Togo'],
+        'sets' => []
     ],
     [
         'name' => 'faroese',
@@ -367,6 +525,8 @@ return [
         'iso-639-2t' => 'fao',
         'iso-639-2b' => 'fao',
         'iso-639-3' => 'fao',
+        'countries' => ['FO' => 'Faroe Islands'],
+        'sets' => []
     ],
     [
         'name' => 'fijian',
@@ -375,6 +535,18 @@ return [
         'iso-639-2t' => 'fij',
         'iso-639-2b' => 'fij',
         'iso-639-3' => 'fij',
+        'countries' => [],
+        'sets' => []
+    ],
+    [
+        'name' => 'filipino',
+        'native' => 'filipino',
+        'iso-639-1' => '',              // TODO
+        'iso-639-2t' => 'fil',
+        'iso-639-2b' => 'fil',
+        'iso-639-3' => 'fil',
+        'countries' => ['PH' => 'Philippines'],
+        'sets' => []
     ],
     [
         'name' => 'finnish',
@@ -383,6 +555,8 @@ return [
         'iso-639-2t' => 'fin',
         'iso-639-2b' => 'fin',
         'iso-639-3' => 'fin',
+        'countries' => ['FI' => 'Finland'],
+        'sets' => []
     ],
     [
         'name' => 'french',
@@ -391,14 +565,18 @@ return [
         'iso-639-2t' => 'fra',
         'iso-639-2b' => 'fre',
         'iso-639-3' => 'fra',
+        'countries' => ['BE' => 'Belgium', 'BF' => 'Burkina Faso', 'BI' => 'Burundi', 'BJ' => 'Benin', 'BL' => 'Saint Barthélemy', 'CA' => 'Canada', 'CD' => 'Congo - Kinshasa', 'CF' => 'Central African Republic', 'CG' => 'Congo - Brazzaville', 'CH' => 'Switzerland', 'CI' => 'Côte d’Ivoire', 'CM' => 'Cameroon', 'DJ' => 'Djibouti', 'FR' => 'France', 'GA' => 'Gabon', 'GN' => 'Guinea', 'GP' => 'Guadeloupe', 'GQ' => 'Equatorial Guinea', 'KM' => 'Comoros', 'LU' => 'Luxembourg', 'MC' => 'Monaco', 'MF' => 'Saint Martin', 'MG' => 'Madagascar', 'ML' => 'Mali', 'MQ' => 'Martinique', 'NE' => 'Niger', 'RE' => 'Réunion', 'RW' => 'Rwanda', 'SN' => 'Senegal', 'TD' => 'Chad', 'TG' => 'Togo'],
+        'sets' => []
     ],
     [
-        'name' => 'fula, fulah, pulaar, pular',
+        'name' => 'fulah',
         'native' => 'fulfulde, pulaar, pular',
         'iso-639-1' => 'ff',
         'iso-639-2t' => 'ful',
         'iso-639-2b' => 'ful',
         'iso-639-3' => 'ful + 9',
+        'countries' => ['SN' => 'Senegal'],
+        'sets' => []
     ],
     [
         'name' => 'galician',
@@ -407,6 +585,8 @@ return [
         'iso-639-2t' => 'glg',
         'iso-639-2b' => 'glg',
         'iso-639-3' => 'glg',
+        'countries' => ['ES' => 'Spain'],
+        'sets' => []
     ],
     [
         'name' => 'georgian',
@@ -415,6 +595,8 @@ return [
         'iso-639-2t' => 'kat',
         'iso-639-2b' => 'geo',
         'iso-639-3' => 'kat',
+        'countries' => ['GE' => 'Georgia'],
+        'sets' => []
     ],
     [
         'name' => 'german',
@@ -423,14 +605,18 @@ return [
         'iso-639-2t' => 'deu',
         'iso-639-2b' => 'ger',
         'iso-639-3' => 'deu',
+        'countries' => ['AT' => 'Austria', 'BE' => 'Belgium', 'CH' => 'Switzerland', 'DE' => 'Germany', 'LI' => 'Liechtenstein', 'LU' => 'Luxembourg'],
+        'sets' => []
     ],
     [
-        'name' => 'greek (modern)',
+        'name' => 'greek',
         'native' => 'ελληνικά',
         'iso-639-1' => 'el',
         'iso-639-2t' => 'ell',
         'iso-639-2b' => 'gre',
         'iso-639-3' => 'ell',
+        'countries' => ['CY' => 'Cyprus', 'GR' => 'Greece'],
+        'sets' => []
     ],
     [
         'name' => 'guaraní',
@@ -439,6 +625,8 @@ return [
         'iso-639-2t' => 'grn',
         'iso-639-2b' => 'grn',
         'iso-639-3' => 'grn + 5',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'gujarati',
@@ -447,6 +635,18 @@ return [
         'iso-639-2t' => 'guj',
         'iso-639-2b' => 'guj',
         'iso-639-3' => 'guj',
+        'countries' => ['IN' => 'India'],
+        'sets' => []
+    ],
+    [
+        'name' => 'gusii',
+        'native' => 'ekegusii',
+        'iso-639-1' => '',              // TODO
+        'iso-639-2t' => '',             // TODO
+        'iso-639-2b' => '',             // TODO
+        'iso-639-3' => 'guz',
+        'countries' => ['KE' => 'Kenya'],
+        'sets' => []
     ],
     [
         'name' => 'haitian, haitian creole',
@@ -455,6 +655,8 @@ return [
         'iso-639-2t' => 'hat',
         'iso-639-2b' => 'hat',
         'iso-639-3' => 'hat',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'hausa',
@@ -463,14 +665,28 @@ return [
         'iso-639-2t' => 'hau',
         'iso-639-2b' => 'hau',
         'iso-639-3' => 'hau',
+        'countries' => ['GH' => 'Ghana', 'NE' => 'Niger', 'NG' => 'Nigeria'],
+        'sets' => ['latn' => 'latin']
     ],
     [
-        'name' => 'hebrew (modern)',
+        'name' => 'hawaiian',
+        'native' => '’olelo hawai’i',
+        'iso-639-1' => '',              // TODO
+        'iso-639-2t' => 'haw',
+        'iso-639-2b' => 'haw',
+        'iso-639-3' => 'haw',
+        'countries' => ['US' => 'United States'],
+        'sets' => []
+    ],
+    [
+        'name' => 'hebrew',
         'native' => 'עברית',
         'iso-639-1' => 'he',
         'iso-639-2t' => 'heb',
         'iso-639-2b' => 'heb',
         'iso-639-3' => 'heb',
+        'countries' => ['IL' => 'Israel'],
+        'sets' => []
     ],
     [
         'name' => 'herero',
@@ -479,6 +695,8 @@ return [
         'iso-639-2t' => 'her',
         'iso-639-2b' => 'her',
         'iso-639-3' => 'her',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'hindi',
@@ -487,6 +705,8 @@ return [
         'iso-639-2t' => 'hin',
         'iso-639-2b' => 'hin',
         'iso-639-3' => 'hin',
+        'countries' => ['IN' => 'India'],
+        'sets' => []
     ],
     [
         'name' => 'hiri motu',
@@ -495,6 +715,8 @@ return [
         'iso-639-2t' => 'hmo',
         'iso-639-2b' => 'hmo',
         'iso-639-3' => 'hmo',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'hungarian',
@@ -503,6 +725,8 @@ return [
         'iso-639-2t' => 'hun',
         'iso-639-2b' => 'hun',
         'iso-639-3' => 'hun',
+        'countries' => ['HU' => 'Hungary'],
+        'sets' => []
     ],
     [
         'name' => 'interlingua',
@@ -511,6 +735,8 @@ return [
         'iso-639-2t' => 'ina',
         'iso-639-2b' => 'ina',
         'iso-639-3' => 'ina',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'indonesian',
@@ -519,6 +745,8 @@ return [
         'iso-639-2t' => 'ind',
         'iso-639-2b' => 'ind',
         'iso-639-3' => 'ind',
+        'countries' => ['ID' => 'Indonesia'],
+        'sets' => []
     ],
     [
         'name' => 'interlingue',
@@ -527,6 +755,8 @@ return [
         'iso-639-2t' => 'ile',
         'iso-639-2b' => 'ile',
         'iso-639-3' => 'ile',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'irish',
@@ -535,6 +765,8 @@ return [
         'iso-639-2t' => 'gle',
         'iso-639-2b' => 'gle',
         'iso-639-3' => 'gle',
+        'countries' => ['IE' => 'Ireland'],
+        'sets' => []
     ],
     [
         'name' => 'igbo',
@@ -543,6 +775,8 @@ return [
         'iso-639-2t' => 'ibo',
         'iso-639-2b' => 'ibo',
         'iso-639-3' => 'ibo',
+        'countries' => ['NG' => 'Nigeria'],
+        'sets' => []
     ],
     [
         'name' => 'inupiaq',
@@ -551,6 +785,8 @@ return [
         'iso-639-2t' => 'ipk',
         'iso-639-2b' => 'ipk',
         'iso-639-3' => 'ipk + 2',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'ido',
@@ -559,6 +795,8 @@ return [
         'iso-639-2t' => 'ido',
         'iso-639-2b' => 'ido',
         'iso-639-3' => 'ido',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'icelandic',
@@ -567,6 +805,8 @@ return [
         'iso-639-2t' => 'isl',
         'iso-639-2b' => 'ice',
         'iso-639-3' => 'isl',
+        'countries' => ['IS' => 'Iceland'],
+        'sets' => []
     ],
     [
         'name' => 'italian',
@@ -575,6 +815,8 @@ return [
         'iso-639-2t' => 'ita',
         'iso-639-2b' => 'ita',
         'iso-639-3' => 'ita',
+        'countries' => ['CH' => 'Switzerland', 'IT' => 'Italy'],
+        'sets' => []
     ],
     [
         'name' => 'inuktitut',
@@ -583,6 +825,8 @@ return [
         'iso-639-2t' => 'iku',
         'iso-639-2b' => 'iku',
         'iso-639-3' => 'iku + 2',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'japanese',
@@ -591,6 +835,8 @@ return [
         'iso-639-2t' => 'jpn',
         'iso-639-2b' => 'jpn',
         'iso-639-3' => 'jpn',
+        'countries' => ['JP' => 'Japan'],
+        'sets' => []
     ],
     [
         'name' => 'javanese',
@@ -599,14 +845,58 @@ return [
         'iso-639-2t' => 'jav',
         'iso-639-2b' => 'jav',
         'iso-639-3' => 'jav',
+        'countries' => [],
+        'sets' => []
     ],
     [
-        'name' => 'kalaallisut, greenlandic',
+        'name' => 'kabuverdianu',
+        'native' => 'crioulo',
+        'iso-639-1' => '',              // TODO
+        'iso-639-2t' => '',             // TODO
+        'iso-639-2b' => '',             // TODO
+        'iso-639-3' => 'kea',
+        'countries' => ['CV' => 'Cape Verde'],
+        'sets' => []
+    ],
+    [
+        'name' => 'kabyle',
+        'native' => 'taqbaylit',
+        'iso-639-1' => '',              // TODO
+        'iso-639-2t' => '',             // TODO
+        'iso-639-2b' => '',             // TODO
+        'iso-639-3' => 'kab',
+        'countries' => ['DZ' => 'Algeria'],
+        'sets' => []
+    ],
+    [
+        'name' => 'kalenjin',
+        'native' => 'kalenjin',
+        'iso-639-1' => '',              // TODO
+        'iso-639-2t' => '',             // TODO
+        'iso-639-2b' => '',             // TODO
+        'iso-639-3' => 'kln + 9',
+        'countries' => ['KE' => 'Kenya'],
+        'sets' => []
+    ],
+    [
+        'name' => 'kalaallisut',
         'native' => 'kalaallisut, kalaallit oqaasii',
         'iso-639-1' => 'kl',
         'iso-639-2t' => 'kal',
         'iso-639-2b' => 'kal',
         'iso-639-3' => 'kal',
+        'countries' => ['GL' => 'Greenland'],
+        'sets' => []
+    ],
+    [
+        'name' => 'kamba',
+        'native' => 'kamba',
+        'iso-639-1' => '',              // TODO
+        'iso-639-2t' => '',             // TODO
+        'iso-639-2b' => '',             // TODO
+        'iso-639-3' => 'kam',
+        'countries' => ['KE' => 'Kenya'],
+        'sets' => []
     ],
     [
         'name' => 'kannada',
@@ -615,6 +905,8 @@ return [
         'iso-639-2t' => 'kan',
         'iso-639-2b' => 'kan',
         'iso-639-3' => 'kan',
+        'countries' => ['IN' => 'India'],
+        'sets' => []
     ],
     [
         'name' => 'kanuri',
@@ -623,6 +915,8 @@ return [
         'iso-639-2t' => 'kau',
         'iso-639-2b' => 'kau',
         'iso-639-3' => 'kau + 3',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'kashmiri',
@@ -631,6 +925,8 @@ return [
         'iso-639-2t' => 'kas',
         'iso-639-2b' => 'kas',
         'iso-639-3' => 'kas',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'kazakh',
@@ -639,6 +935,8 @@ return [
         'iso-639-2t' => 'kaz',
         'iso-639-2b' => 'kaz',
         'iso-639-3' => 'kaz',
+        'countries' => ['KZ' => 'Kazakhstan'],
+        'sets' => ['cyrl' => 'cyrillic']
     ],
     [
         'name' => 'khmer',
@@ -647,14 +945,18 @@ return [
         'iso-639-2t' => 'khm',
         'iso-639-2b' => 'khm',
         'iso-639-3' => 'khm',
+        'countries' => ['KH' => 'Cambodia'],
+        'sets' => []
     ],
     [
-        'name' => 'kikuyu, gikuyu',
+        'name' => 'kikuyu',
         'native' => 'gĩkũyũ',
         'iso-639-1' => 'ki',
         'iso-639-2t' => 'kik',
         'iso-639-2b' => 'kik',
         'iso-639-3' => 'kik',
+        'countries' => ['KE' => 'Kenya'],
+        'sets' => []
     ],
     [
         'name' => 'kinyarwanda',
@@ -663,6 +965,8 @@ return [
         'iso-639-2t' => 'kin',
         'iso-639-2b' => 'kin',
         'iso-639-3' => 'kin',
+        'countries' => ['RW' => 'Rwanda'],
+        'sets' => []
     ],
     [
         'name' => 'kyrgyz',
@@ -671,6 +975,8 @@ return [
         'iso-639-2t' => 'kir',
         'iso-639-2b' => 'kir',
         'iso-639-3' => 'kir',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'komi',
@@ -679,6 +985,8 @@ return [
         'iso-639-2t' => 'kom',
         'iso-639-2b' => 'kom',
         'iso-639-3' => 'kom + 2',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'kongo',
@@ -687,6 +995,18 @@ return [
         'iso-639-2t' => 'kon',
         'iso-639-2b' => 'kon',
         'iso-639-3' => 'kon + 3',
+        'countries' => [],
+        'sets' => []
+    ],
+    [
+        'name' => 'konkani',
+        'native' => 'konkani',
+        'iso-639-1' => '',              // TODO
+        'iso-639-2t' => '',             // TODO
+        'iso-639-2b' => '',             // TODO
+        'iso-639-3' => 'kok + 2',
+        'countries' => ['IN' => 'India'],
+        'sets' => []
     ],
     [
         'name' => 'korean',
@@ -695,6 +1015,28 @@ return [
         'iso-639-2t' => 'kor',
         'iso-639-2b' => 'kor',
         'iso-639-3' => 'kor',
+        'countries' => ['KR' => 'South Korea'],
+        'sets' => []
+    ],
+    [
+        'name' => 'koyra chiini',
+        'native' => 'songai',
+        'iso-639-1' => '',              // TODO
+        'iso-639-2t' => '',             // TODO
+        'iso-639-2b' => '',             // TODO
+        'iso-639-3' => 'khq',
+        'countries' => ['ML' => 'Mali'],
+        'sets' => []
+    ],
+    [
+        'name' => 'koyraboro senni',
+        'native' => 'koyraboro senni',
+        'iso-639-1' => '',              // TODO
+        'iso-639-2t' => '',             // TODO
+        'iso-639-2b' => '',             // TODO
+        'iso-639-3' => 'ses',
+        'countries' => ['ML' => 'Mali'],
+        'sets' => []
     ],
     [
         'name' => 'kurdish',
@@ -703,6 +1045,8 @@ return [
         'iso-639-2t' => 'kur',
         'iso-639-2b' => 'kur',
         'iso-639-3' => 'kur + 3',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'kwanyama, kuanyama',
@@ -711,6 +1055,8 @@ return [
         'iso-639-2t' => 'kua',
         'iso-639-2b' => 'kua',
         'iso-639-3' => 'kua',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'latin',
@@ -719,6 +1065,8 @@ return [
         'iso-639-2t' => 'lat',
         'iso-639-2b' => 'lat',
         'iso-639-3' => 'lat',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'luxembourgish, letzeburgesch',
@@ -727,6 +1075,8 @@ return [
         'iso-639-2t' => 'ltz',
         'iso-639-2b' => 'ltz',
         'iso-639-3' => 'ltz',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'ganda',
@@ -735,6 +1085,8 @@ return [
         'iso-639-2t' => 'lug',
         'iso-639-2b' => 'lug',
         'iso-639-3' => 'lug',
+        'countries' => ['UG' => 'Uganda'],
+        'sets' => []
     ],
     [
         'name' => 'limburgish, limburgan, limburger',
@@ -743,6 +1095,8 @@ return [
         'iso-639-2t' => 'lim',
         'iso-639-2b' => 'lim',
         'iso-639-3' => 'lim',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'lingala',
@@ -751,6 +1105,8 @@ return [
         'iso-639-2t' => 'lin',
         'iso-639-2b' => 'lin',
         'iso-639-3' => 'lin',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'lao',
@@ -759,6 +1115,18 @@ return [
         'iso-639-2t' => 'lao',
         'iso-639-2b' => 'lao',
         'iso-639-3' => 'lao',
+        'countries' => [],
+        'sets' => []
+    ],
+    [
+        'name' => 'langi',
+        'native' => 'kilaangi',
+        'iso-639-1' => '',              // TODO
+        'iso-639-2t' => '',             // TODO
+        'iso-639-2b' => '',             // TODO
+        'iso-639-3' => 'lag',
+        'countries' => ['TZ' => 'Tanzania'],
+        'sets' => []
     ],
     [
         'name' => 'lithuanian',
@@ -767,6 +1135,8 @@ return [
         'iso-639-2t' => 'lit',
         'iso-639-2b' => 'lit',
         'iso-639-3' => 'lit',
+        'countries' => ['LT' => 'Lithuania'],
+        'sets' => []
     ],
     [
         'name' => 'luba-katanga',
@@ -775,6 +1145,28 @@ return [
         'iso-639-2t' => 'lub',
         'iso-639-2b' => 'lub',
         'iso-639-3' => 'lub',
+        'countries' => [],
+        'sets' => []
+    ],
+    [
+        'name' => 'luo',
+        'native' => 'luo',
+        'iso-639-1' => '',              // TODO
+        'iso-639-2t' => '',             // TODO
+        'iso-639-2b' => '',             // TODO
+        'iso-639-3' => 'luo',
+        'countries' => ['KE' => 'Kenya'],
+        'sets' => []
+    ],
+    [
+        'name' => 'luyia',
+        'native' => 'luyia',
+        'iso-639-1' => '',              // TODO
+        'iso-639-2t' => '',             // TODO
+        'iso-639-2b' => '',             // TODO
+        'iso-639-3' => 'luy + 14',
+        'countries' => ['KE' => 'Kenya'],
+        'sets' => []
     ],
     [
         'name' => 'latvian',
@@ -783,6 +1175,8 @@ return [
         'iso-639-2t' => 'lav',
         'iso-639-2b' => 'lav',
         'iso-639-3' => 'lav + 2',
+        'countries' => ['LV' => 'Latvia'],
+        'sets' => []
     ],
     [
         'name' => 'manx',
@@ -791,6 +1185,8 @@ return [
         'iso-639-2t' => 'glv',
         'iso-639-2b' => 'glv',
         'iso-639-3' => 'glv',
+        'countries' => ['GB' => 'United Kingdom'],
+        'sets' => []
     ],
     [
         'name' => 'macedonian',
@@ -799,6 +1195,28 @@ return [
         'iso-639-2t' => 'mkd',
         'iso-639-2b' => 'mac',
         'iso-639-3' => 'mkd',
+        'countries' => ['MK' => 'Macedonia'],
+        'sets' => []
+    ],
+    [
+        'name' => 'machame',
+        'native' => 'machame',
+        'iso-639-1' => '',              // TODO
+        'iso-639-2t' => '',             // TODO
+        'iso-639-2b' => '',             // TODO
+        'iso-639-3' => 'jmc',
+        'countries' => ['TZ' => 'Tanzania'],
+        'sets' => []
+    ],
+    [
+        'name' => 'makonde',
+        'native' => 'makonde',
+        'iso-639-1' => '',              // TODO
+        'iso-639-2t' => '',             // TODO
+        'iso-639-2b' => '',             // TODO
+        'iso-639-3' => 'kde',
+        'countries' => ['TZ' => 'Tanzania'],
+        'sets' => []
     ],
     [
         'name' => 'malagasy',
@@ -807,6 +1225,8 @@ return [
         'iso-639-2t' => 'mlg',
         'iso-639-2b' => 'mlg',
         'iso-639-3' => 'mlg + 10',
+        'countries' => ['MG' => 'Madagascar'],
+        'sets' => []
     ],
     [
         'name' => 'malay',
@@ -815,6 +1235,8 @@ return [
         'iso-639-2t' => 'msa',
         'iso-639-2b' => 'may',
         'iso-639-3' => 'msa + 13',
+        'countries' => ['BN' => 'Brunei', 'MY' => 'Malaysia'],
+        'sets' => []
     ],
     [
         'name' => 'malayalam',
@@ -823,6 +1245,8 @@ return [
         'iso-639-2t' => 'mal',
         'iso-639-2b' => 'mal',
         'iso-639-3' => 'mal',
+        'countries' => ['IN' => 'India'],
+        'sets' => []
     ],
     [
         'name' => 'maltese',
@@ -831,6 +1255,8 @@ return [
         'iso-639-2t' => 'mlt',
         'iso-639-2b' => 'mlt',
         'iso-639-3' => 'mlt',
+        'countries' => ['MT' => 'Malta'],
+        'sets' => []
     ],
     [
         'name' => 'māori',
@@ -839,14 +1265,18 @@ return [
         'iso-639-2t' => 'mri',
         'iso-639-2b' => 'mao',
         'iso-639-3' => 'mri',
+        'countries' => [],
+        'sets' => []
     ],
     [
-        'name' => 'marathi (marāṭhī)',
+        'name' => 'marathi',
         'native' => 'मराठी',
         'iso-639-1' => 'mr',
         'iso-639-2t' => 'mar',
         'iso-639-2b' => 'mar',
         'iso-639-3' => 'mar',
+        'countries' => ['IN' => 'India'],
+        'sets' => []
     ],
     [
         'name' => 'marshallese',
@@ -855,6 +1285,28 @@ return [
         'iso-639-2t' => 'mah',
         'iso-639-2b' => 'mah',
         'iso-639-3' => 'mah',
+        'countries' => [],
+        'sets' => []
+    ],
+    [
+        'name' => 'masai',
+        'native' => 'masai',
+        'iso-639-1' => '',              // TODO
+        'iso-639-2t' => '',             // TODO
+        'iso-639-2b' => '',             // TODO
+        'iso-639-3' => 'mas',
+        'countries' => ['KE' => 'Kenya', 'TZ' => 'Tanzania'],
+        'sets' => []
+    ],
+    [
+        'name' => 'meru',
+        'native' => 'meru',
+        'iso-639-1' => '',              // TODO
+        'iso-639-2t' => '',             // TODO
+        'iso-639-2b' => '',             // TODO
+        'iso-639-3' => 'mer',
+        'countries' => ['KE' => 'Kenya'],
+        'sets' => []
     ],
     [
         'name' => 'mongolian',
@@ -863,6 +1315,28 @@ return [
         'iso-639-2t' => 'mon',
         'iso-639-2b' => 'mon',
         'iso-639-3' => 'mon + 2',
+        'countries' => [],
+        'sets' => []
+    ],
+    [
+        'name' => 'morisyen',
+        'native' => 'morisyen',
+        'iso-639-1' => '',              // TODO
+        'iso-639-2t' => '',             // TODO
+        'iso-639-2b' => '',             // TODO
+        'iso-639-3' => 'mfe',
+        'countries' => ['MU' => 'Mauritius'],
+        'sets' => []
+    ],
+    [
+        'name' => 'nama',
+        'native' => 'khoekhoe',
+        'iso-639-1' => '',              // TODO
+        'iso-639-2t' => '',             // TODO
+        'iso-639-2b' => '',             // TODO
+        'iso-639-3' => 'naq',
+        'countries' => ['NA' => 'Namibia'],
+        'sets' => []
     ],
     [
         'name' => 'nauru',
@@ -871,6 +1345,8 @@ return [
         'iso-639-2t' => 'nau',
         'iso-639-2b' => 'nau',
         'iso-639-3' => 'nau',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'navajo, navaho',
@@ -879,6 +1355,8 @@ return [
         'iso-639-2t' => 'nav',
         'iso-639-2b' => 'nav',
         'iso-639-3' => 'nav',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'northern ndebele',
@@ -887,6 +1365,8 @@ return [
         'iso-639-2t' => 'nde',
         'iso-639-2b' => 'nde',
         'iso-639-3' => 'nde',
+        'countries' => ['ZW' => 'Zimbabwe'],
+        'sets' => []
     ],
     [
         'name' => 'nepali',
@@ -895,6 +1375,8 @@ return [
         'iso-639-2t' => 'nep',
         'iso-639-2b' => 'nep',
         'iso-639-3' => 'nep',
+        'countries' => ['IN' => 'India', 'NP' => 'Nepal'],
+        'sets' => []
     ],
     [
         'name' => 'ndonga',
@@ -903,6 +1385,8 @@ return [
         'iso-639-2t' => 'ndo',
         'iso-639-2b' => 'ndo',
         'iso-639-3' => 'ndo',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'norwegian bokmål',
@@ -911,6 +1395,8 @@ return [
         'iso-639-2t' => 'nob',
         'iso-639-2b' => 'nob',
         'iso-639-3' => 'nob',
+        'countries' => ['NO' => 'Norway'],
+        'sets' => []
     ],
     [
         'name' => 'norwegian nynorsk',
@@ -919,6 +1405,8 @@ return [
         'iso-639-2t' => 'nno',
         'iso-639-2b' => 'nno',
         'iso-639-3' => 'nno',
+        'countries' => ['NO' => 'Norway'],
+        'sets' => []
     ],
     [
         'name' => 'norwegian',
@@ -927,14 +1415,28 @@ return [
         'iso-639-2t' => 'nor',
         'iso-639-2b' => 'nor',
         'iso-639-3' => 'nor + 2',
+        'countries' => [],
+        'sets' => []
     ],
     [
-        'name' => 'nuosu',
+        'name' => 'nyankole',
+        'native' => 'nyankore',
+        'iso-639-1' => '',              // TODO
+        'iso-639-2t' => '',             // TODO
+        'iso-639-2b' => '',             // TODO
+        'iso-639-3' => 'nyn',
+        'countries' => ['UG' => 'Uganda'],
+        'sets' => []
+    ],
+    [
+        'name' => 'sichuan yi',
         'native' => 'ꆈꌠ꒿ nuosuhxop',
         'iso-639-1' => 'ii',
         'iso-639-2t' => 'iii',
         'iso-639-2b' => 'iii',
         'iso-639-3' => 'iii',
+        'countries' => ['CN' => 'China'],
+        'sets' => []
     ],
     [
         'name' => 'southern ndebele',
@@ -943,6 +1445,8 @@ return [
         'iso-639-2t' => 'nbl',
         'iso-639-2b' => 'nbl',
         'iso-639-3' => 'nbl',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'occitan',
@@ -951,6 +1455,8 @@ return [
         'iso-639-2t' => 'oci',
         'iso-639-2b' => 'oci',
         'iso-639-3' => 'oci',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'ojibwe, ojibwa',
@@ -959,6 +1465,8 @@ return [
         'iso-639-2t' => 'oji',
         'iso-639-2b' => 'oji',
         'iso-639-3' => 'oji + 7',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'old church slavonic, church slavonic, old bulgarian',
@@ -967,6 +1475,8 @@ return [
         'iso-639-2t' => 'chu',
         'iso-639-2b' => 'chu',
         'iso-639-3' => 'chu',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'oromo',
@@ -975,6 +1485,8 @@ return [
         'iso-639-2t' => 'orm',
         'iso-639-2b' => 'orm',
         'iso-639-3' => 'orm + 4',
+        'countries' => ['ET' => 'Ethiopia', 'KE' => 'Kenya'],
+        'sets' => []
     ],
     [
         'name' => 'oriya',
@@ -983,6 +1495,8 @@ return [
         'iso-639-2t' => 'ori',
         'iso-639-2b' => 'ori',
         'iso-639-3' => 'ori',
+        'countries' => ['IN' => 'India'],
+        'sets' => []
     ],
     [
         'name' => 'ossetian, ossetic',
@@ -991,14 +1505,18 @@ return [
         'iso-639-2t' => 'oss',
         'iso-639-2b' => 'oss',
         'iso-639-3' => 'oss',
+        'countries' => [],
+        'sets' => []
     ],
     [
-        'name' => 'panjabi, punjabi',
+        'name' => 'punjabi',
         'native' => 'ਪੰਜਾਬੀ, پنجابی‎',
         'iso-639-1' => 'pa',
         'iso-639-2t' => 'pan',
         'iso-639-2b' => 'pan',
         'iso-639-3' => 'pan',
+        'countries' => ['IN' => 'India', 'PK' => 'Pakistan'],
+        'sets' => ['arab' => 'arabic', 'guru' => 'gurmukhi']
     ],
     [
         'name' => 'pāli',
@@ -1007,14 +1525,18 @@ return [
         'iso-639-2t' => 'pli',
         'iso-639-2b' => 'pli',
         'iso-639-3' => 'pli',
+        'countries' => [],
+        'sets' => []
     ],
     [
-        'name' => 'persian (farsi)',
+        'name' => 'persian',
         'native' => 'فارسی',
         'iso-639-1' => 'fa',
         'iso-639-2t' => 'fas',
         'iso-639-2b' => 'per',
         'iso-639-3' => 'fas + 2',
+        'countries' => ['AF' => 'Afghanistan', 'IR' => 'Iran'],
+        'sets' => []
     ],
     [
         'name' => 'polish',
@@ -1023,14 +1545,18 @@ return [
         'iso-639-2t' => 'pol',
         'iso-639-2b' => 'pol',
         'iso-639-3' => 'pol',
+        'countries' => ['PL' => 'Poland'],
+        'sets' => []
     ],
     [
-        'name' => 'pashto, pushto',
+        'name' => 'pashto',
         'native' => 'پښتو',
         'iso-639-1' => 'ps',
         'iso-639-2t' => 'pus',
         'iso-639-2b' => 'pus',
         'iso-639-3' => 'pus + 3',
+        'countries' => ['AF' => 'Afghanistan'],
+        'sets' => []
     ],
     [
         'name' => 'portuguese',
@@ -1039,6 +1565,8 @@ return [
         'iso-639-2t' => 'por',
         'iso-639-2b' => 'por',
         'iso-639-3' => 'por',
+        'countries' => ['BR' => 'Brazil', 'GW' => 'Guinea-Bissau', 'MZ' => 'Mozambique', 'PT' => 'Portugal'],
+        'sets' => []
     ],
     [
         'name' => 'quechua',
@@ -1047,6 +1575,8 @@ return [
         'iso-639-2t' => 'que',
         'iso-639-2b' => 'que',
         'iso-639-3' => 'que + 44',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'romansh',
@@ -1055,6 +1585,8 @@ return [
         'iso-639-2t' => 'roh',
         'iso-639-2b' => 'roh',
         'iso-639-3' => 'roh',
+        'countries' => ['CH' => 'Switzerland'],
+        'sets' => []
     ],
     [
         'name' => 'kirundi',
@@ -1063,6 +1595,8 @@ return [
         'iso-639-2t' => 'run',
         'iso-639-2b' => 'run',
         'iso-639-3' => 'run',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'romanian',
@@ -1071,6 +1605,18 @@ return [
         'iso-639-2t' => 'ron',
         'iso-639-2b' => 'rum',
         'iso-639-3' => 'ron',
+        'countries' => ['MD' => 'Moldova', 'RO' => 'Romania'],
+        'sets' => []
+    ],
+    [
+        'name' => 'rombo',
+        'native' => 'kirombo',
+        'iso-639-1' => '',              // TODO
+        'iso-639-2t' => '',             // TODO
+        'iso-639-2b' => '',             // TODO
+        'iso-639-3' => 'rof',
+        'countries' => ['TZ' => 'Tanzania'],
+        'sets' => []
     ],
     [
         'name' => 'russian',
@@ -1079,6 +1625,18 @@ return [
         'iso-639-2t' => 'rus',
         'iso-639-2b' => 'rus',
         'iso-639-3' => 'rus',
+        'countries' => ['MD' => 'Moldova', 'RU' => 'Russia', 'UA' => 'Ukraine'],
+        'sets' => []
+    ],
+    [
+        'name' => 'rwa',
+        'native' => 'rwa',
+        'iso-639-1' => '',              // TODO
+        'iso-639-2t' => '',             // TODO
+        'iso-639-2b' => '',             // TODO
+        'iso-639-3' => 'rwk',
+        'countries' => ['TZ' => 'Tanzania'],
+        'sets' => []
     ],
     [
         'name' => 'sanskrit (saṁskṛta)',
@@ -1087,6 +1645,8 @@ return [
         'iso-639-2t' => 'san',
         'iso-639-2b' => 'san',
         'iso-639-3' => 'san',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'sardinian',
@@ -1095,6 +1655,8 @@ return [
         'iso-639-2t' => 'srd',
         'iso-639-2b' => 'srd',
         'iso-639-3' => 'srd + 4',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'sindhi',
@@ -1103,6 +1665,8 @@ return [
         'iso-639-2t' => 'snd',
         'iso-639-2b' => 'snd',
         'iso-639-3' => 'snd',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'northern sami',
@@ -1111,6 +1675,18 @@ return [
         'iso-639-2t' => 'sme',
         'iso-639-2b' => 'sme',
         'iso-639-3' => 'sme',
+        'countries' => [],
+        'sets' => []
+    ],
+    [
+        'name' => 'samburu',
+        'native' => 'samburu',
+        'iso-639-1' => '',              // TODO
+        'iso-639-2t' => '',             // TODO
+        'iso-639-2b' => '',             // TODO
+        'iso-639-3' => 'saq',
+        'countries' => ['KE' => 'Kenya'],
+        'sets' => []
     ],
     [
         'name' => 'samoan',
@@ -1119,6 +1695,8 @@ return [
         'iso-639-2t' => 'smo',
         'iso-639-2b' => 'smo',
         'iso-639-3' => 'smo',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'sango',
@@ -1127,6 +1705,8 @@ return [
         'iso-639-2t' => 'sag',
         'iso-639-2b' => 'sag',
         'iso-639-3' => 'sag',
+        'countries' => ['CF' => 'Central African Republic'],
+        'sets' => []
     ],
     [
         'name' => 'serbian',
@@ -1135,6 +1715,18 @@ return [
         'iso-639-2t' => 'srp',
         'iso-639-2b' => 'srp',
         'iso-639-3' => 'srp',
+        'countries' => ['BA' => 'Bosnia and Herzegovina', 'ME' => 'Montenegro', 'RS' => 'Serbia'],
+        'sets' => ['cyrl' => 'cyrillic', 'latn' => 'latin']
+    ],
+    [
+        'name' => 'sena',
+        'native' => 'sena',
+        'iso-639-1' => '',              // TODO
+        'iso-639-2t' => '',             // TODO
+        'iso-639-2b' => '',             // TODO
+        'iso-639-3' => 'seh',
+        'countries' => ['MZ' => 'Mozambique'],
+        'sets' => []
     ],
     [
         'name' => 'scottish gaelic, gaelic',
@@ -1143,6 +1735,8 @@ return [
         'iso-639-2t' => 'gla',
         'iso-639-2b' => 'gla',
         'iso-639-3' => 'gla',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'shona',
@@ -1151,14 +1745,18 @@ return [
         'iso-639-2t' => 'sna',
         'iso-639-2b' => 'sna',
         'iso-639-3' => 'sna',
+        'countries' => ['ZW' => 'Zimbabwe'],
+        'sets' => []
     ],
     [
-        'name' => 'sinhala, sinhalese',
+        'name' => 'sinhala',
         'native' => 'සිංහල',
         'iso-639-1' => 'si',
         'iso-639-2t' => 'sin',
         'iso-639-2b' => 'sin',
         'iso-639-3' => 'sin',
+        'countries' => ['LK' => 'Sri Lanka'],
+        'sets' => []
     ],
     [
         'name' => 'slovak',
@@ -1167,14 +1765,28 @@ return [
         'iso-639-2t' => 'slk',
         'iso-639-2b' => 'slo',
         'iso-639-3' => 'slk',
+        'countries' => ['SK' => 'Slovakia'],
+        'sets' => []
     ],
     [
-        'name' => 'slovene',
+        'name' => 'slovenian',
         'native' => 'slovenski jezik, slovenščina',
         'iso-639-1' => 'sl',
         'iso-639-2t' => 'slv',
         'iso-639-2b' => 'slv',
         'iso-639-3' => 'slv',
+        'countries' => ['SI' => 'Slovenia'],
+        'sets' => []
+    ],
+    [
+        'name' => 'soga',
+        'native' => 'soga',
+        'iso-639-1' => '',              // TODO
+        'iso-639-2t' => '',             // TODO
+        'iso-639-2b' => '',             // TODO
+        'iso-639-3' => 'xog',
+        'countries' => ['UG' => 'Uganda'],
+        'sets' => []
     ],
     [
         'name' => 'somali',
@@ -1183,6 +1795,8 @@ return [
         'iso-639-2t' => 'som',
         'iso-639-2b' => 'som',
         'iso-639-3' => 'som',
+        'countries' => ['DJ' => 'Djibouti', 'ET' => 'Ethiopia', 'KE' => 'Kenya', 'SO' => 'Somalia'],
+        'sets' => []
     ],
     [
         'name' => 'southern sotho',
@@ -1191,14 +1805,18 @@ return [
         'iso-639-2t' => 'sot',
         'iso-639-2b' => 'sot',
         'iso-639-3' => 'sot',
+        'countries' => [],
+        'sets' => []
     ],
     [
-        'name' => 'spanish, castilian',
+        'name' => 'spanish',
         'native' => 'español, castellano',
         'iso-639-1' => 'es',
         'iso-639-2t' => 'spa',
         'iso-639-2b' => 'spa',
         'iso-639-3' => 'spa',
+        'countries' => ['AR' => 'Argentina', 'BO' => 'Bolivia', 'CL' => 'Chile', 'CO' => 'Colombia', 'CR' => 'Costa Rica', 'DO' => 'Dominican Republic', 'EC' => 'Ecuador', 'ES' => 'Spain', 'GQ' => 'Equatorial Guinea', 'GT' => 'Guatemala', 'HN' => 'Honduras', 'MX' => 'Mexico', 'NI' => 'Nicaragua', 'PA' => 'Panama', 'PE' => 'Peru', 'PR' => 'Puerto Rico', 'PY' => 'Paraguay', 'SV' => 'El Salvador', 'US' => 'United States', 'UY' => 'Uruguay', 'VE' => 'Venezuela'],
+        'sets' => []
     ],
     [
         'name' => 'sundanese',
@@ -1207,6 +1825,8 @@ return [
         'iso-639-2t' => 'sun',
         'iso-639-2b' => 'sun',
         'iso-639-3' => 'sun',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'swahili',
@@ -1215,6 +1835,8 @@ return [
         'iso-639-2t' => 'swa',
         'iso-639-2b' => 'swa',
         'iso-639-3' => 'swa + 2',
+        'countries' => ['KE' => 'Kenya', 'TZ' => 'Tanzania'],
+        'sets' => []
     ],
     [
         'name' => 'swati',
@@ -1223,6 +1845,8 @@ return [
         'iso-639-2t' => 'ssw',
         'iso-639-2b' => 'ssw',
         'iso-639-3' => 'ssw',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'swedish',
@@ -1231,6 +1855,18 @@ return [
         'iso-639-2t' => 'swe',
         'iso-639-2b' => 'swe',
         'iso-639-3' => 'swe',
+        'countries' => ['FI' => 'Finland', 'SE' => 'Sweden'],
+        'sets' => []
+    ],
+    [
+        'name' => 'swiss german',
+        'native' => 'schwiizerdütsch',
+        'iso-639-1' => '',              // TODO
+        'iso-639-2t' => 'gsw',
+        'iso-639-2b' => 'gsw',
+        'iso-639-3' => 'gsw',
+        'countries' => ['CH' => 'Switzerland'],
+        'sets' => []
     ],
     [
         'name' => 'tamil',
@@ -1239,6 +1875,28 @@ return [
         'iso-639-2t' => 'tam',
         'iso-639-2b' => 'tam',
         'iso-639-3' => 'tam',
+        'countries' => ['IN' => 'India', 'LK' => 'Sri Lanka'],
+        'sets' => []
+    ],
+    [
+        'name' => 'taita',
+        'native' => 'kidawida',
+        'iso-639-1' => '',              // TODO
+        'iso-639-2t' => '',             // TODO
+        'iso-639-2b' => '',             // TODO
+        'iso-639-3' => 'dav',
+        'countries' => ['KE' => 'Kenya'],
+        'sets' => []
+    ],
+    [
+        'name' => 'tachelhit',
+        'native' => 'tašlḥiyt',
+        'iso-639-1' => '',              // TODO
+        'iso-639-2t' => '',             // TODO
+        'iso-639-2b' => '',             // TODO
+        'iso-639-3' => 'shi',
+        'countries' => ['MA' => 'Morocco'],
+        'sets' => ['latn' => 'latin', 'tfng' => 'tifinagh']
     ],
     [
         'name' => 'telugu',
@@ -1247,6 +1905,18 @@ return [
         'iso-639-2t' => 'tel',
         'iso-639-2b' => 'tel',
         'iso-639-3' => 'tel',
+        'countries' => ['IN' => 'India'],
+        'sets' => []
+    ],
+    [
+        'name' => 'teso',
+        'native' => 'ateso',
+        'iso-639-1' => '',              // TODO
+        'iso-639-2t' => '',             // TODO
+        'iso-639-2b' => '',             // TODO
+        'iso-639-3' => 'teo',
+        'countries' => ['KE' => 'Kenya', 'UG' => 'Uganda'],
+        'sets' => []
     ],
     [
         'name' => 'tajik',
@@ -1255,6 +1925,8 @@ return [
         'iso-639-2t' => 'tgk',
         'iso-639-2b' => 'tgk',
         'iso-639-3' => 'tgk',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'thai',
@@ -1263,6 +1935,8 @@ return [
         'iso-639-2t' => 'tha',
         'iso-639-2b' => 'tha',
         'iso-639-3' => 'tha',
+        'countries' => ['TH' => 'Thailand'],
+        'sets' => []
     ],
     [
         'name' => 'tigrinya',
@@ -1271,14 +1945,18 @@ return [
         'iso-639-2t' => 'tir',
         'iso-639-2b' => 'tir',
         'iso-639-3' => 'tir',
+        'countries' => ['ER' => 'Eritrea', 'ET' => 'Ethiopia'],
+        'sets' => []
     ],
     [
-        'name' => 'tibetan standard, tibetan, central',
+        'name' => 'tibetan',
         'native' => 'བོད་ཡིག',
         'iso-639-1' => 'bo',
         'iso-639-2t' => 'bod',
         'iso-639-2b' => 'tib',
         'iso-639-3' => 'bod',
+        'countries' => ['CN' => 'China', 'IN' => 'India'],
+        'sets' => []
     ],
     [
         'name' => 'turkmen',
@@ -1287,6 +1965,8 @@ return [
         'iso-639-2t' => 'tuk',
         'iso-639-2b' => 'tuk',
         'iso-639-3' => 'tuk',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'tagalog',
@@ -1295,6 +1975,8 @@ return [
         'iso-639-2t' => 'tgl',
         'iso-639-2b' => 'tgl',
         'iso-639-3' => 'tgl',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'tswana',
@@ -1303,14 +1985,18 @@ return [
         'iso-639-2t' => 'tsn',
         'iso-639-2b' => 'tsn',
         'iso-639-3' => 'tsn',
+        'countries' => [],
+        'sets' => []
     ],
     [
-        'name' => 'tonga', // tonga islands
+        'name' => 'tonga',
         'native' => 'faka tonga',
         'iso-639-1' => 'to',
         'iso-639-2t' => 'ton',
         'iso-639-2b' => 'ton',
         'iso-639-3' => 'ton',
+        'countries' => ['TO' => 'Tonga'],
+        'sets' => []
     ],
     [
         'name' => 'turkish',
@@ -1319,6 +2005,8 @@ return [
         'iso-639-2t' => 'tur',
         'iso-639-2b' => 'tur',
         'iso-639-3' => 'tur',
+        'countries' => ['TR' => 'Turkey'],
+        'sets' => []
     ],
     [
         'name' => 'tsonga',
@@ -1327,6 +2015,8 @@ return [
         'iso-639-2t' => 'tso',
         'iso-639-2b' => 'tso',
         'iso-639-3' => 'tso',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'tatar',
@@ -1335,6 +2025,8 @@ return [
         'iso-639-2t' => 'tat',
         'iso-639-2b' => 'tat',
         'iso-639-3' => 'tat',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'twi',
@@ -1343,6 +2035,8 @@ return [
         'iso-639-2t' => 'twi',
         'iso-639-2b' => 'twi',
         'iso-639-3' => 'twi',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'tahitian',
@@ -1351,6 +2045,8 @@ return [
         'iso-639-2t' => 'tah',
         'iso-639-2b' => 'tah',
         'iso-639-3' => 'tah',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'uyghur, uighur',
@@ -1359,6 +2055,8 @@ return [
         'iso-639-2t' => 'uig',
         'iso-639-2b' => 'uig',
         'iso-639-3' => 'uig',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'ukrainian',
@@ -1367,6 +2065,8 @@ return [
         'iso-639-2t' => 'ukr',
         'iso-639-2b' => 'ukr',
         'iso-639-3' => 'ukr',
+        'countries' => ['UA' => 'Ukraine'],
+        'sets' => []
     ],
     [
         'name' => 'urdu',
@@ -1375,6 +2075,8 @@ return [
         'iso-639-2t' => 'urd',
         'iso-639-2b' => 'urd',
         'iso-639-3' => 'urd',
+        'countries' => ['IN' => 'India', 'PK' => 'Pakistan'],
+        'sets' => []
     ],
     [
         'name' => 'uzbek',
@@ -1383,6 +2085,8 @@ return [
         'iso-639-2t' => 'uzb',
         'iso-639-2b' => 'uzb',
         'iso-639-3' => 'uzb + 2',
+        'countries' => ['AF' => 'Afghanistan', 'UZ' => 'Uzbekistan'],
+        'sets' => ['arab' => 'arabic', 'cyrl' => 'cyrillic', 'latn' => 'latin']
     ],
     [
         'name' => 'venda',
@@ -1391,6 +2095,8 @@ return [
         'iso-639-2t' => 'ven',
         'iso-639-2b' => 'ven',
         'iso-639-3' => 'ven',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'vietnamese',
@@ -1399,6 +2105,8 @@ return [
         'iso-639-2t' => 'vie',
         'iso-639-2b' => 'vie',
         'iso-639-3' => 'vie',
+        'countries' => ['VN' => 'Vietnam'],
+        'sets' => []
     ],
     [
         'name' => 'volapük',
@@ -1407,6 +2115,18 @@ return [
         'iso-639-2t' => 'vol',
         'iso-639-2b' => 'vol',
         'iso-639-3' => 'vol',
+        'countries' => [],
+        'sets' => []
+    ],
+    [
+        'name' => 'vunjo',
+        'native' => 'wunjo',
+        'iso-639-1' => '',              // TODO
+        'iso-639-2t' => '',             // TODO
+        'iso-639-2b' => '',             // TODO
+        'iso-639-3' => 'vun',
+        'countries' => ['TZ' => 'Tanzania'],
+        'sets' => []
     ],
     [
         'name' => 'walloon',
@@ -1415,6 +2135,8 @@ return [
         'iso-639-2t' => 'wln',
         'iso-639-2b' => 'wln',
         'iso-639-3' => 'wln',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'welsh',
@@ -1423,6 +2145,8 @@ return [
         'iso-639-2t' => 'cym',
         'iso-639-2b' => 'wel',
         'iso-639-3' => 'cym',
+        'countries' => ['GB' => 'United Kingdom'],
+        'sets' => []
     ],
     [
         'name' => 'wolof',
@@ -1431,6 +2155,8 @@ return [
         'iso-639-2t' => 'wol',
         'iso-639-2b' => 'wol',
         'iso-639-3' => 'wol',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'western frisian',
@@ -1439,6 +2165,8 @@ return [
         'iso-639-2t' => 'fry',
         'iso-639-2b' => 'fry',
         'iso-639-3' => 'fry',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'xhosa',
@@ -1447,6 +2175,8 @@ return [
         'iso-639-2t' => 'xho',
         'iso-639-2b' => 'xho',
         'iso-639-3' => 'xho',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'yiddish',
@@ -1455,6 +2185,8 @@ return [
         'iso-639-2t' => 'yid',
         'iso-639-2b' => 'yid',
         'iso-639-3' => 'yid + 2',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'yoruba',
@@ -1463,6 +2195,8 @@ return [
         'iso-639-2t' => 'yor',
         'iso-639-2b' => 'yor',
         'iso-639-3' => 'yor',
+        'countries' => ['NG' => 'Nigeria'],
+        'sets' => []
     ],
     [
         'name' => 'zhuang, chuang',
@@ -1471,6 +2205,8 @@ return [
         'iso-639-2t' => 'zha',
         'iso-639-2b' => 'zha',
         'iso-639-3' => 'zha + 16',
+        'countries' => [],
+        'sets' => []
     ],
     [
         'name' => 'zulu',
@@ -1479,6 +2215,8 @@ return [
         'iso-639-2t' => 'zul',
         'iso-639-2b' => 'zul',
         'iso-639-3' => 'zul',
+        'countries' => ['ZA' => 'South Africa'],
+        'sets' => []
     ],
 
 ];
