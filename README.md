@@ -2,9 +2,22 @@
 
 This package will convert languages _from and to_ some common formats (ISO codes, W3C standards, PHP localization strings), including human-readable strings.
 
-We are working on a _format guesser_, which will try to automatically understand the format it receives. This could be pretty useful when trying to parse user content.
-
 **Disclaimer**: this is still a work in progress.
+
+## Content
+
+The package currently supports **over 220 languages**. Most living languages are included, with country codes, names and possible alphabet sets (Latin, Cyrillic, Arabic, ...).
+
+Available **input and output formats** are:
+
+1. `name`: The (probably) english name of the language.
+2. `native`: The autonym of the language.
+3. `ISO-639-1`: The official [two-letter code](https://www.loc.gov/standards/iso639-2/php/code_list.php) for the language. **Some languages do not have this code**.
+4. `ISO-639-2t`: An official three-letters code for terminology applications (ISO 639-2/T) for the language.
+5. `ISO-639-2b`: An official three-letters code for bibliographic applications (ISO 639-2/B) for the language.
+6. `ISO-639-3`: The official three-letters code. This is also the most common terminology and therefore the most complete language representation. In most cases, this is the same format as `ISO-639-2t`, except for macrolanguages. 
+
+**Note on macrolanguages**: The `ISO-639-3` output will also indicate the amount of sub-languages represented with the same ISO code.
 
 ## Usage
 
