@@ -44,7 +44,7 @@ $language = (new Lingua())->fromISO_639_2b('iku');
 // Create a converter from a ISO 639-3 code
 // Note: this will not throw an error if the iso-code is not defined in the language repository
 $language = Lingua::createFromISO_639_3('aze + 2');
-$language = (new Lingua())->fromISO_639_2b('asm');
+$language = (new Lingua())->fromISO_639_3('asm');
 
 /*
     ... other W3C & PHP methods are to come.
