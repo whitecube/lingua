@@ -96,7 +96,7 @@ echo $language->toISO_639_3(); // "fra"
 echo $language->toW3C(); // "fr" in this case but could be "fr-BE" if country code was specified
 
 /*
-    ... PHP methods is to come.
+    ... PHP method is to come.
 */
 ```
 
@@ -104,7 +104,7 @@ echo $language->toW3C(); // "fr" in this case but could be "fr-BE" if country co
 
 Lingua instances can be automatically transformed to strings without calling any formatting method. 
 
-The **default format** is set to `w3c`, this means you can use Lingua instances as strings and the `toName()` method will be called out of the box.
+The **default format** is set to `w3c`, this means you can use Lingua instances as strings and the `toW3C()` method will be called out of the box.
 
 ```php
 use WhiteCube\Lingua\Service as Lingua;
