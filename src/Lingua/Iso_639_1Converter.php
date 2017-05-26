@@ -4,9 +4,9 @@ namespace WhiteCube\Lingua;
 
 class Iso_639_1Converter extends Converter implements ConverterInterface
 {
-    public static function check(string $format)
+    public static function check($format)
     {
-        if(preg_match('/^([A-Za-z]){2}$/', static::prepare($format))) return true;
+        if(preg_match('/^([A-Za-z]{2})$/', static::prepare($format))) return true;
         return false;
     }
 
@@ -16,6 +16,7 @@ class Iso_639_1Converter extends Converter implements ConverterInterface
         $this->iso_639_1 = $this->original;
         $this->iso_639_2t = $this->repository ? $this->repository['iso-639-2t'] : '';
         $this->iso_639_2b = $this->repository ? $this->repository['iso-639-2b'] : '';
+        $this->iso_639_3 = $this->repository ? $this->repository['iso-639-3'] : '';
     }
 
     public static function format(ConverterInterface $converter)

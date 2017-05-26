@@ -6,7 +6,7 @@ interface ConverterInterface
 {
     static function prepare(string $string);
 
-    static function check(string $format);
+    static function check($format);
 
     function validate();
 

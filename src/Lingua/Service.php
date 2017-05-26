@@ -112,18 +112,6 @@ class Service
     }
 
     /**
-    public function fromISO639_2t($iso)
-    {
-        $this->setFormatLookup('ISO639-2/t', $iso);
-        return $this;
-    }
-
-    public function fromISO639_2b($iso)
-    {
-        $this->setFormatLookup('ISO639-2/b', $iso);
-        return $this;
-    }
-
     public function fromISO639_3($iso)
     {
         $this->setFormatLookup('ISO639-3', $iso);

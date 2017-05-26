@@ -41,8 +41,13 @@ $language = (new Lingua())->fromISO_639_2t('gle');
 $language = Lingua::createFromISO_639_2b('her');
 $language = (new Lingua())->fromISO_639_2b('iku');
 
+// Create a converter from a ISO 639-3 code
+// Note: this will not throw an error if the iso-code is not defined in the language repository
+$language = Lingua::createFromISO_639_3('aze + 2');
+$language = (new Lingua())->fromISO_639_2b('asm');
+
 /*
-    ... other ISO, W3C & PHP methods are to come.
+    ... other W3C & PHP methods are to come.
 */
 ```
 
@@ -70,8 +75,11 @@ echo $language->toISO_639_2t(); // "fra"
 // Format a language in a ISO 639-2b string
 echo $language->toISO_639_2b(); // "fre"
 
+// Format a language in a ISO 639-2b string
+echo $language->toISO_639_3(); // "fra"
+
 /*
-    ... other ISO, W3C & PHP methods are to come.
+    ... other W3C & PHP methods are to come.
 */
 ```
 
@@ -81,7 +89,7 @@ Lingua instances can be automatically transformed to strings without calling any
 
 The **default format** is set to `name`, this means you can use Lingua instances as strings and the `toName()` method will be called out of the box.
 
-Available formats are: `name`, `native`, `iso-639-1`. Other formats are coming soon.
+Available formats are: `name`, `native`, `iso-639-1`, `iso-639-2t`, `iso-639-2b`, `iso-639-3`. Other formats are coming soon.
 
 ```php
 use WhiteCube\Lingua\Service as Lingua;
