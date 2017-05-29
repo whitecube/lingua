@@ -13,16 +13,16 @@ Available **input and output formats** are:
 1. `name`: The (probably) english name of the language.
 2. `native`: The autonym of the language.
 3. `ISO-639-1`: The official [two-letter code](https://www.loc.gov/standards/iso639-2/php/code_list.php) for the language. **Some languages do not have this code**.
-4. `ISO-639-2t`: An official three-letters code for terminology applications (ISO 639-2/T) for the language.
-5. `ISO-639-2b`: An official three-letters code for bibliographic applications (ISO 639-2/B) for the language.
-6. `ISO-639-3`: The official three-letters code. This is also the most common terminology and therefore the most complete language representation. In most cases, this is the same format as `ISO-639-2t`, except for macrolanguages. 
+4. `ISO-639-2t`: An official three-letter code for terminology applications (ISO 639-2/T) for the language.
+5. `ISO-639-2b`: An official three-letter code for bibliographic applications (ISO 639-2/B) for the language.
+6. `ISO-639-3`: The official three-letter code. This is also the most common terminology and therefore the most complete language representation. In most cases, this is the same format as `ISO-639-2t`, except for macrolanguages.
 7. `W3C`: A [valid](https://r12a.github.io/app-subtags/) string as described by the BCP 47 specification (used in the [W3C](https://www.w3.org/International/questions/qa-html-language-declarations#langvalues)'s language attributes recommendations).
 
 **Note on macrolanguages**: The `ISO-639-3` output will also indicate the amount of sub-languages represented with the same ISO code.
 
 ## Usage
 
-The Lingua converter works in two stages: first you'll need to instanciate it by providing the original format, than you can convert this string as many times as you want to one of the available formats.
+The Lingua converter works in two stages: first you'll need to instantiate it by providing the original format, than you can convert this string as many times as you want to any of the available formats.
 
 ### Setters
 
@@ -61,7 +61,7 @@ $language = Lingua::createFromW3C('ae');
 $language = (new Lingua())->fromW3C('zh-hans-SG');
 
 /*
-    ... PHP method is to come.
+    ... PHP method coming soon.
 */
 ```
 
@@ -96,13 +96,13 @@ echo $language->toISO_639_3(); // "fra"
 echo $language->toW3C(); // "fr" in this case but could be "fr-BE" if country code was specified
 
 /*
-    ... PHP method is to come.
+    ... PHP method coming soon.
 */
 ```
 
 #### Default formatting
 
-Lingua instances can be automatically transformed to strings without calling any formatting method. 
+Lingua instances can be automatically transformed to strings without calling any formatting method.
 
 The **default format** is set to `w3c`, this means you can use Lingua instances as strings and the `toW3C()` method will be called out of the box.
 
@@ -125,7 +125,7 @@ Lingua::setFormat('iso-639-1');
 echo $language; // "it"
 ```
 
-Additionally it is also possible to specify a desired format during the instanciation of Lingua. This **will always ignore the default formatting**, even if you just called the static `setFormat` method.
+Additionally it is also possible to specify a desired format during the instantiation of Lingua. This **will always ignore the default formatting**, even if you just called the static `setFormat` method.
 
 ```php
 use WhiteCube\Lingua\Service as Lingua;
@@ -151,7 +151,7 @@ echo Lingua::createFromName('maltese', 'native'); // "malti"
 
 ## Contributing
 
-Your help can be precious in order to make this package more accurate! You can contribute on two levels.
+Your help is precious in order to make this package more accurate! You can contribute on two levels.
 
 ### Working on core features
 
