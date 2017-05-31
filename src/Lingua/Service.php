@@ -30,7 +30,7 @@ class Service
 
     public static function __callStatic($method, $arguments = [])
     {
-        $method = self::sanitizeInstanciationMethod($method);
+        $method = self::sanitizeInstantiationMethod($method);
         $instance = new static(count($arguments) == 2 ? $arguments[1] : null);
         call_user_func_array([$instance, $method], [$arguments[0]]);
         return $instance;
@@ -63,10 +63,10 @@ class Service
     * @param string $method
     * @return string
     */
-    static protected function sanitizeInstanciationMethod($method)
+    static protected function sanitizeInstantiationMethod($method)
     {
         if (strpos($method, 'create') < 0) {
-            throw new \Exception('Instanciation methods should begin with "create"');
+            throw new \Exception('Instantiation methods should begin with "create"');
         }
         return lcfirst(trim(substr($method, 6), '_'));
     }
