@@ -10,13 +10,14 @@ The package currently supports **over 220 languages**. Most living languages are
 
 Available **input and output formats** are:
 
-1. `name`: The (probably) english name of the language.
+1. `name`: The english name of the language (most of the time).
 2. `native`: The autonym of the language.
 3. `ISO-639-1`: The official [two-letter code](https://www.loc.gov/standards/iso639-2/php/code_list.php) for the language. **Some languages do not have this code**.
 4. `ISO-639-2t`: An official three-letter code for terminology applications (ISO 639-2/T) for the language.
 5. `ISO-639-2b`: An official three-letter code for bibliographic applications (ISO 639-2/B) for the language.
 6. `ISO-639-3`: The official three-letter code. This is also the most common terminology and therefore the most complete language representation. In most cases, this is the same format as `ISO-639-2t`, except for macrolanguages.
 7. `W3C`: A [valid](https://r12a.github.io/app-subtags/) string as described by the BCP 47 specification (used in the [W3C](https://www.w3.org/International/questions/qa-html-language-declarations#langvalues)'s language attributes recommendations).
+8. `PHP`: A string with the appropriate format for PHP's `setlocale()`. This does not check if the locale is available on your server.
 
 **Note on macrolanguages**: The `ISO-639-3` output will also indicate the amount of sub-languages represented with the same ISO code.
 
@@ -60,9 +61,9 @@ $language = (new Lingua())->fromISO_639_3('asm');
 $language = Lingua::createFromW3C('ae');
 $language = (new Lingua())->fromW3C('zh-hans-SG');
 
-/*
-    ... PHP method coming soon.
-*/
+// Create a converter from a valid PHP localization string
+$language = Lingua::createFromPHP('fr_BE');
+$language = (new Lingua())->fromPHP('kk_Cyrl_KZ');
 ```
 
 ### Formatting
@@ -95,9 +96,8 @@ echo $language->toISO_639_3(); // "fra"
 // Format a language in a valid W3C language attribute string (according to BCP 47)
 echo $language->toW3C(); // "fr" in this case but could be "fr-BE" if country code was specified
 
-/*
-    ... PHP method coming soon.
-*/
+// Format a localization string for PHP's setlocale()
+echo $language->toPHP(); // "fr" in this case but could be "fr_BE" if country code was specified
 ```
 
 #### Default formatting
