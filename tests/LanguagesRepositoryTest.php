@@ -1,6 +1,7 @@
 <?php
 
 use \WhiteCube\Lingua\LanguagesRepository;
+use \WhiteCube\Lingua\Service as Lingua;
 use PHPUnit\Framework\TestCase;
 
 class LanguageRespositoryTest extends TestCase
@@ -18,6 +19,13 @@ class LanguageRespositoryTest extends TestCase
         $this->expectException(\Exception::class);
         unlink('./languages.php');
         new LanguagesRepository();
+    }
+
+    /** @test */
+    public function can_register_new_language_in_repository()
+    {
+        LanguagesRepository::register(['name' => 'whitecube', 'native' => 'whitecube', 'iso-639-3' => 'whi']);
+        $this->assertEquals('whi', Lingua::createFromName('whitecube')->toISO_639_3());
     }
 
     public function tearDown()
