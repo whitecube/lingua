@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1496345197">
-  <project timestamp="1496345197">
+<coverage generated="1496345509">
+  <project timestamp="1496345509">
     <package name="WhiteCube\Lingua">
       <file name="/Users/whitecube/Sites/lingua/src/Lingua/ComponentConverter.php">
         <class name="ComponentConverter" namespace="WhiteCube\Lingua">
@@ -164,7 +164,7 @@
       </file>
       <file name="/Users/whitecube/Sites/lingua/src/Lingua/LanguagesRepository.php">
         <class name="LanguagesRepository" namespace="WhiteCube\Lingua">
-          <metrics complexity="11" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="14" elements="18" coveredelements="18"/>
+          <metrics complexity="11" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="15" elements="19" coveredelements="19"/>
         </class>
         <line num="14" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="2"/>
         <line num="16" type="stmt" count="2"/>
@@ -183,8 +183,9 @@
         <line num="37" type="method" name="loadRepository" visibility="protected" complexity="2" crap="2" count="2"/>
         <line num="39" type="stmt" count="2"/>
         <line num="40" type="stmt" count="1"/>
-        <line num="42" type="stmt" count="1"/>
-        <metrics loc="44" ncloc="44" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="14" elements="18" coveredelements="18"/>
+        <line num="41" type="stmt" count="1"/>
+        <line num="43" type="stmt" count="1"/>
+        <metrics loc="45" ncloc="45" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="15" elements="19" coveredelements="19"/>
       </file>
       <file name="/Users/whitecube/Sites/lingua/src/Lingua/NameConverter.php">
         <class name="NameConverter" namespace="WhiteCube\Lingua">
@@ -335,6 +336,6 @@
     <file name="/Users/whitecube/Sites/lingua/src/Lingua/ConverterInterface.php">
       <metrics loc="16" ncloc="16" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
-    <metrics files="13" loc="593" ncloc="555" classes="12" methods="54" coveredmethods="46" conditionals="0" coveredconditionals="0" statements="203" coveredstatements="194" elements="257" coveredelements="240"/>
+    <metrics files="13" loc="594" ncloc="556" classes="12" methods="54" coveredmethods="46" conditionals="0" coveredconditionals="0" statements="204" coveredstatements="195" elements="258" coveredelements="241"/>
   </project>
 </coverage>
