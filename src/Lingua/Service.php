@@ -75,7 +75,7 @@ class Service
     */
     static protected function sanitizeInstantiationMethod($method)
     {
-        if (strpos($method, 'create') < 0) {
+        if (strpos($method, 'create') === false) {
             throw new \Exception('Instantiation methods should begin with "create"');
         }
         return lcfirst(trim(substr($method, 6), '_'));

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1496346709">
-  <project timestamp="1496346709">
+<coverage generated="1496347006">
+  <project timestamp="1496347006">
     <package name="WhiteCube\Lingua">
       <file name="/Users/whitecube/Sites/lingua/src/Lingua/ComponentConverter.php">
         <class name="ComponentConverter" namespace="WhiteCube\Lingua">
@@ -260,21 +260,21 @@
       </file>
       <file name="/Users/whitecube/Sites/lingua/src/Lingua/Service.php">
         <class name="Service" namespace="WhiteCube\Lingua">
-          <metrics complexity="22" methods="11" coveredmethods="10" conditionals="0" coveredconditionals="0" statements="38" coveredstatements="37" elements="49" coveredelements="47"/>
+          <metrics complexity="22" methods="11" coveredmethods="11" conditionals="0" coveredconditionals="0" statements="38" coveredstatements="38" elements="49" coveredelements="49"/>
         </class>
-        <line num="24" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="118"/>
-        <line num="26" type="stmt" count="118"/>
-        <line num="27" type="stmt" count="118"/>
+        <line num="24" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="117"/>
+        <line num="26" type="stmt" count="117"/>
+        <line num="27" type="stmt" count="117"/>
         <line num="29" type="method" name="__toString" visibility="public" complexity="1" crap="1" count="2"/>
         <line num="31" type="stmt" count="2"/>
-        <line num="34" type="method" name="__call" visibility="public" complexity="3" crap="3" count="117"/>
-        <line num="36" type="stmt" count="117"/>
-        <line num="37" type="stmt" count="98"/>
-        <line num="38" type="stmt" count="2"/>
+        <line num="34" type="method" name="__call" visibility="public" complexity="3" crap="3" count="116"/>
+        <line num="36" type="stmt" count="116"/>
+        <line num="37" type="stmt" count="97"/>
+        <line num="38" type="stmt" count="1"/>
         <line num="41" type="method" name="__callStatic" visibility="public" complexity="2" crap="2" count="102"/>
         <line num="43" type="stmt" count="102"/>
-        <line num="44" type="stmt" count="102"/>
-        <line num="45" type="stmt" count="102"/>
+        <line num="44" type="stmt" count="101"/>
+        <line num="45" type="stmt" count="101"/>
         <line num="46" type="stmt" count="93"/>
         <line num="54" type="method" name="setFormat" complexity="1" crap="1" count="1"/>
         <line num="56" type="stmt" count="1"/>
@@ -283,10 +283,10 @@
         <line num="66" type="stmt" count="16"/>
         <line num="67" type="stmt" count="16"/>
         <line num="68" type="stmt" count="1"/>
-        <line num="76" type="method" name="sanitizeInstantiationMethod" visibility="protected" complexity="2" crap="2.15" count="102"/>
+        <line num="76" type="method" name="sanitizeInstantiationMethod" visibility="protected" complexity="2" crap="2" count="102"/>
         <line num="78" type="stmt" count="102"/>
-        <line num="79" type="stmt" count="0"/>
-        <line num="81" type="stmt" count="102"/>
+        <line num="79" type="stmt" count="1"/>
+        <line num="81" type="stmt" count="101"/>
         <line num="90" type="method" name="transformConverterMethod" visibility="protected" complexity="3" crap="3" count="116"/>
         <line num="92" type="stmt" count="116"/>
         <line num="93" type="stmt" count="116"/>
@@ -311,7 +311,7 @@
         <line num="139" type="method" name="convert" visibility="protected" complexity="1" crap="1" count="98"/>
         <line num="141" type="stmt" count="98"/>
         <line num="142" type="stmt" count="97"/>
-        <metrics loc="145" ncloc="107" classes="1" methods="11" coveredmethods="10" conditionals="0" coveredconditionals="0" statements="38" coveredstatements="37" elements="49" coveredelements="47"/>
+        <metrics loc="145" ncloc="107" classes="1" methods="11" coveredmethods="11" conditionals="0" coveredconditionals="0" statements="38" coveredstatements="38" elements="49" coveredelements="49"/>
       </file>
       <file name="/Users/whitecube/Sites/lingua/src/Lingua/W3cConverter.php">
         <class name="W3cConverter" namespace="WhiteCube\Lingua">
@@ -335,6 +335,6 @@
     <file name="/Users/whitecube/Sites/lingua/src/Lingua/ConverterInterface.php">
       <metrics loc="16" ncloc="16" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
-    <metrics files="13" loc="593" ncloc="555" classes="12" methods="54" coveredmethods="50" conditionals="0" coveredconditionals="0" statements="203" coveredstatements="199" elements="257" coveredelements="249"/>
+    <metrics files="13" loc="593" ncloc="555" classes="12" methods="54" coveredmethods="51" conditionals="0" coveredconditionals="0" statements="203" coveredstatements="200" elements="257" coveredelements="251"/>
   </project>
 </coverage>
