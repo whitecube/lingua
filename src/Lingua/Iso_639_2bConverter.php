@@ -21,6 +21,6 @@ class Iso_639_2bConverter extends Converter implements ConverterInterface
 
     public static function format(ConverterInterface $converter)
     {
-        return $converter->iso_639_2t;
+        return $converter->iso_639_2b;
     }
 }
