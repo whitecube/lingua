@@ -31,7 +31,6 @@ class LanguagesRepository
             if($language[$format] == $value) return $language;
             if($format == 'iso-639-3' && strpos($language[$format], $value) === 0) return $language;
         }
-        return false;
     }
 
     public static function register(array $definition)

@@ -1,7 +1,8 @@
 <?php
 
-use \WhiteCube\Lingua\Service as Lingua;
 use PHPUnit\Framework\TestCase;
+use \WhiteCube\Lingua\Service as Lingua;
+use WhiteCube\Lingua\LanguagesRepository;
 
 class W3cConverterTest extends TestCase
 {
@@ -122,6 +123,14 @@ class W3cConverterTest extends TestCase
     {
         $language = Lingua::createFromW3c('zh-test-tw');
         $this->assertEquals('zh_Test_TW', $language->toPHP());
+    }
+
+    /** @test */
+    public function can_convert_w3c_to_php_from_iso_639_2t_part()
+    {
+        LanguagesRepository::register(['iso-639-1' => 'xx', 'iso-639-2t' => 'xxx', 'iso-639-3' => 'xyx']);
+        $language = Lingua::createFromW3c('xxx-BE');
+        $this->assertEquals('xx_BE', $language->toPHP());
     }
 
 }
