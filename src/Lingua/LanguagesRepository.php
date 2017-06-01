@@ -34,6 +34,21 @@ class LanguagesRepository
         return false;
     }
 
+    public static function register(array $definition)
+    {
+        $instance = self::getInstance();
+        $instance->languages[] = array_replace_recursive([
+            'name' => '',
+            'native' => '',
+            'iso-639-1' => '',
+            'iso-639-2t' => '',
+            'iso-639-2b' => '',
+            'iso-639-3' => '',
+            'countries' => [],
+            'scripts' => []
+        ], $definition);
+    }
+
     protected function loadRepository()
     {
         if(!$this->path) {
