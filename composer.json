@@ -1,5 +1,25 @@
 {
+    "name": "whitecube/lingua",
+    "authors": [
+        {
+            "name": "WhiteCube",
+            "email": "hello@whitecube.be"
+        },
+        {
+            "name": "Toon Van den Bos",
+            "email": "toon@whitecube.be"
+        },
+        {
+            "name": "Adrien Leloup",
+            "email": "adrien@whitecube.be"
+        }
+    ],
     "require-dev": {
         "phpunit/phpunit": "^6.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "WhiteCube\\Lingua\\": "src/Lingua/"
+        }
     }
 }
