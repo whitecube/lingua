@@ -153,6 +153,31 @@ use WhiteCube\Lingua\Service as Lingua;
 echo Lingua::createFromName('maltese', 'native'); // "malti"
 ```
 
+## Registering custom languages
+
+Sometimes you'll want to add new languages to the built-in languages repository in order to recognize them later on. Of course, if said languages should be added to the package, you should consider contributing to this repo. In the meantime you can also add them from your code thanks to the `LanguagesRepository::register()` method.
+
+```php
+use WhiteCube\Lingua\Service as Lingua;
+use WhiteCube\Lingua\LanguagesRepository;
+
+// Note: all keys of the register-array showed below are optionnal.
+LanguagesRepository::register([
+    'name' => 'custom',
+    'native' => 'custom-language',
+    'iso-639-1' => 'cl',
+    'iso-639-2t' => 'cla',
+    'iso-639-2b' => 'cla',
+    'iso-639-3' => 'cla + 2',
+    'countries' => ['MY' => 'My Country'],
+    'scripts' => ['latn' => 'latin', 'cyrl' => 'cyrillic']
+]);
+
+echo Lingua::createFromName('custom')->toNative(); // "custom-language"
+```
+
+This will not modify the `./languages.php` file! Registered languages are only available in the same request.
+
 ## Contributing
 
 Your help is precious in order to make this package more accurate! You can contribute on two levels.
