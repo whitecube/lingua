@@ -1,6 +1,7 @@
 # Lingua - Language Codes Converter
 
 [![Travis](https://img.shields.io/travis/whiteCube/lingua.svg)]()
+[![Code Climate](https://img.shields.io/codeclimate/coverage/github/whiteCube/lingua.svg)]()
 [![GitHub version](https://badge.fury.io/gh/whiteCube%2Flingua.svg)](https://badge.fury.io/gh/whiteCube%2Flingua)
 [![Github All Releases](https://img.shields.io/github/downloads/whiteCube/lingua/total.svg)]()
 [![GitHub issues](https://img.shields.io/github/issues/whiteCube/lingua.svg)]()
