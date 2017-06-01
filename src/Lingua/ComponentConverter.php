@@ -36,10 +36,7 @@ class ComponentConverter extends Converter
 
     protected static function getCountryFromPregMatch($matches)
     {
-        if(isset($matches[3])) return strtoupper($matches[3]);
-        if(!isset($matches[2])) return;
-        if(strlen($matches[2]) !== 2) return;
-        return strtoupper($matches[2]);
+        if(isset($matches[3]) && strlen($matches[3])) return strtoupper($matches[3]);
     }
 
     protected function findInRepository()
