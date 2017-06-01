@@ -1,5 +1,19 @@
 language: php
+
 php:
   - '7.0'
   - '7.1'
+
 install: composer install
+
+coverage:
+    enabled: true
+    include:
+        - src/*
+
+addons:
+  code_climate:
+    repo_token: 7b95e34fed9b3d0971232dd25bce6e576bb8ad02c155c1c434414dd584e10b10
+
+after_success:
+  - vendor/bin/test-reporter

@@ -13,6 +13,13 @@ class NameConverterTest extends TestCase
     }
 
     /** @test */
+    public function cannot_convert_if_not_in_repository()
+    {
+        $this->expectException(\Exception::class);
+        Lingua::createFromW3C('fu')->toName();
+    }
+
+    /** @test */
     public function cannot_be_created_from_invalid_name()
     {
         $this->expectException(\Exception::class);
