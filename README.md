@@ -9,8 +9,6 @@
 
 This package will convert languages _from and to_ some common formats (ISO codes, W3C standards, PHP localization strings), including human-readable strings.
 
-**Disclaimer**: this is still a work in progress.
-
 ## Content
 
 The package currently supports **over 220 languages**. Most living languages are included, with country codes, names and possible alphabet sets (Latin, Cyrillic, Arabic, ...).
@@ -38,7 +36,7 @@ The Lingua converter works in two stages: first you'll need to instantiate it by
 use WhiteCube\Lingua\Service as Lingua;
 
 // Create a converter, without knowing the original format (this will try to guess it for you)
-$language = Lingua::create('en_GB'); // Not yet working.
+$language = Lingua::create('en_GB');
 
 // Create a converter from a language name
 $language = Lingua::createFromName('french');
@@ -81,11 +79,9 @@ use WhiteCube\Lingua\Service as Lingua;
 $language = Lingua::createFromNative('français');
 
 // Format a language in a human readable string (the language's english name)
-// Note: this will trigger an exception if $language has no equivalency in the languages repository
 echo $language->toName(); // "french"
 
 // Format a language in its native form
-// Note: this will trigger an exception if $language has no equivalency in the languages repository
 echo $language->toNative(); // "français"
 
 // Format a language in a ISO 639-1 string
@@ -116,10 +112,10 @@ The **default format** is set to `w3c`, this means you can use Lingua instances 
 ```php
 use WhiteCube\Lingua\Service as Lingua;
 
-echo Lingua::createFromISO_639_3('ita'); // "italian"
+echo Lingua::createFromName('italian'); // "it"
 ```
 
-You can change this default behavior by calling the static `setFormat` method. Available formats are: `name`, `native`, `iso-639-1`, `iso-639-2t`, `iso-639-2b`, `iso-639-3`, `w3c`. Other formats are coming soon.
+You can change this default behavior by calling the static `setFormat` method. Available formats are: `name`, `native`, `iso-639-1`, `iso-639-2t`, `iso-639-2b`, `iso-639-3`, `w3c` and `php`.
 
 ```php
 use WhiteCube\Lingua\Service as Lingua;
@@ -171,5 +167,7 @@ Please open or comment existing issues on this repository in order to report bug
 There are currently some languages marked with a `// TODO` comment in the `./languages.php` file. This means we probably didn't find enough information about these languages. You know how to fill the gaps? Please let us know! You can open an issue, make a pull-request or contact us on any available platform.
 
 And of course you can also add new languages to the repository, but only if you're sure about the terminology.
+
+Please beware that changing some existing values in the `languages.php` file can result in some PHPUnit test failures, so make sure to run the tests and update them accordingly before submitting your changes. 
 
 Thank you!

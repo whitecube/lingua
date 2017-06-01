@@ -6,6 +6,17 @@ class Service
 {
     static protected $defaultFormat = 'w3c';
 
+    static protected $converters = [
+        Iso_639_1Converter::class,
+        Iso_639_2bConverter::class,
+        Iso_639_2tConverter::class,
+        Iso_639_3Converter::class,
+        W3cConverter::class,
+        PhpConverter::class,
+        NameConverter::class,
+        NativeConverter::class
+    ];
+
     protected $output;
 
     private $converter;
@@ -24,8 +35,7 @@ class Service
     {
         if(strpos($method, 'from') === 0) return $this->makeConverter($method, $arguments);
         if(strpos($method, 'to') === 0) return $this->convert($method, $arguments);
-        throw new \Exception('Call to undefined Lingua method');
-        
+        throw new \Exception('Call to undefined Lingua method "' . $method . '"');
     }
 
     public static function __callStatic($method, $arguments = [])
@@ -51,11 +61,11 @@ class Service
     * @param string $code
     * @return this
     */
-    static function create($code)
+    static function create(string $code)
     {
         $instance = new static();
-        $instance->guess($code);
-        return $instance;
+        if($instance->guess($code)) return $instance;
+        throw new \Exception('Unable to guess the format for input string "' . $code . '"');
     }
 
     /**
@@ -89,15 +99,30 @@ class Service
     }
 
     /**
-    * Parses given string (any)
-    * @param string $name
-    * @return this
+    * Instantiates the right converter for given input string (any)
+    * @param string $format
+    * @return boolean
     */
-    protected function guess($format)
+    protected function guess(string $format)
     {
-        //  TODO : condition against the check() method of every converter
+        $matches = [];
+        foreach (self::$converters as $key => $converter) {
+            if(!call_user_func_array($converter . '::check', [$format])) continue;
+            $converter = new $converter($format);
+            array_unshift($matches, $converter);
+            if($converter->repository) break;
+        }
+        if(!$matches) return false;
+        $this->converter = $matches[0];
+        return true;
     }
 
+    /**
+    * Instantiates the right converter for given convertion method
+    * @param string $method
+    * @param array $arguments
+    * @return this
+    */
     protected function makeConverter($method, $arguments = [])
     {
         $converter = self::transformConverterMethod($method, 'from');
@@ -105,30 +130,16 @@ class Service
         return $this;
     }
 
+    /**
+    * Calls the right static conversion method for given method
+    * @param string $method
+    * @param array $arguments
+    * @return string
+    */
     protected function convert($method, $arguments = [])
     {
         $converter = self::transformConverterMethod($method, 'to');
-        return call_user_func_array($converter. '::format', [$this->converter]);
+        return call_user_func_array($converter . '::format', [$this->converter]);
     }
 
-    /**
-    public function fromISO639_3($iso)
-    {
-        $this->setFormatLookup('ISO639-3', $iso);
-        return $this;
-    }
-
-    public function fromW3C($string)
-    {
-        $this->setFormatLookup('W3C', $string);
-        return $this;
-    }
-
-    public function fromPHP($string)
-    {
-        $this->setFormatLookup('PHP', $string);
-        return $this;
-    }
-
-    */
 }
