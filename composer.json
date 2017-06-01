@@ -1,21 +1,32 @@
 {
     "name": "whitecube/lingua",
+    "description": "A PHP-7 language codes converter, from and to the most common formats (ISO, W3C, PHP and human-readable names).",
+    "keywords": ["localization", "locales", "language", "conversion", "ISO", "codes", "BCP-47", "translation", "translate"],
+    "license": "MIT",
     "authors": [
         {
             "name": "WhiteCube",
-            "email": "hello@whitecube.be"
+            "email": "hello@whitecube.be",
+            "homepage": "http://www.whitecube.be",
+            "role": "Maintainer"
         },
         {
             "name": "Toon Van den Bos",
-            "email": "toon@whitecube.be"
+            "email": "toon@whitecube.be",
+            "role": "Developer"
         },
         {
             "name": "Adrien Leloup",
-            "email": "adrien@whitecube.be"
+            "email": "adrien@whitecube.be",
+            "role": "Developer"
         }
     ],
+    "support": {
+        "issues": "https://github.com/whiteCube/lingua/issues",
+        "source": "https://github.com/whiteCube/lingua"
+    },
     "require": {
-        "php": ">=7.0.0",
+        "php": "^7.0",
         "ext-mbstring": "*"
     },
     "require-dev": {
