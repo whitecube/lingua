@@ -1,5 +1,12 @@
 # Lingua - Language Codes Converter
 
+[![Travis](https://img.shields.io/travis/whiteCube/lingua.svg)]()
+[![GitHub version](https://badge.fury.io/gh/whiteCube%2Flingua.svg)](https://badge.fury.io/gh/whiteCube%2Flingua)
+[![Github All Releases](https://img.shields.io/github/downloads/whiteCube/lingua/total.svg)]()
+[![GitHub issues](https://img.shields.io/github/issues/whiteCube/lingua.svg)]()
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/whiteCube/lingua.svg)]()
+[![license](https://img.shields.io/github/license/whiteCube/lingua.svg)]()
+
 This package will convert languages _from and to_ some common formats (ISO codes, W3C standards, PHP localization strings), including human-readable strings.
 
 **Disclaimer**: this is still a work in progress.
