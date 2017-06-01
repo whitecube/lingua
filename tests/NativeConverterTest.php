@@ -82,4 +82,11 @@ class NativeConverterTest extends TestCase
         $this->assertEquals('tzm', $language->toPHP());
     }
 
+    /** @test */
+    public function native_conversion_throws_error_if_lang_not_registered()
+    {
+        $this->expectException(\Exception::class);
+        Lingua::createFromW3c('har')->toNative();
+    }
+
 }
