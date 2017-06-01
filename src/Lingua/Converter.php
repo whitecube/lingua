@@ -43,7 +43,7 @@ class Converter
 
     public static function prepare(string $string)
     {
-        return strtolower(trim($string));
+        return mb_strtolower(trim($string));
     }
 
     protected function getEmptyNameBag()
