@@ -176,7 +176,7 @@ LanguagesRepository::register([
 echo Lingua::createFromName('custom')->toNative(); // "custom-language"
 ```
 
-This will not modify the `./languages.php` file! Registered languages are only available in the same request.
+This will not modify the `./languages.php` file! Registered languages are only stored in memory.
 
 ## Contributing
 
