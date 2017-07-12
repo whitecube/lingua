@@ -9,6 +9,10 @@
          stopOnFailure="false"
 >
 
+    <logging>
+        <log type="coverage-clover" target="build/logs/clover.xml" />
+    </logging>
+
     <filter>
         <whitelist>
             <directory>src/Lingua</directory>
