@@ -1,12 +1,12 @@
 # Lingua - Language Codes Converter
 
-[![Travis](https://img.shields.io/travis/whiteCube/lingua.svg)]()
-[![Code Climate](https://img.shields.io/codeclimate/coverage/github/whiteCube/lingua.svg)]()
-[![GitHub release](https://img.shields.io/github/tag/whiteCube/lingua.svg)]()
-[![Github All Releases](https://img.shields.io/github/downloads/whiteCube/lingua/total.svg)]()
-[![GitHub issues](https://img.shields.io/github/issues/whiteCube/lingua.svg)]()
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/whiteCube/lingua.svg)]()
-[![license](https://img.shields.io/github/license/whiteCube/lingua.svg)]()
+[![Travis](https://img.shields.io/travis/whiteCube/lingua.svg)](https://travis-ci.org/whiteCube/lingua)
+[![Code Climate](https://img.shields.io/codeclimate/coverage/github/whiteCube/lingua.svg)](https://codeclimate.com/github/whiteCube/lingua)
+[![GitHub release](https://img.shields.io/github/tag/whiteCube/lingua.svg)](https://github.com/whiteCube/lingua/releases)
+[![Packagist](https://img.shields.io/packagist/dt/whiteCube/Lingua.svg)](https://packagist.org/packages/whitecube/lingua)
+[![GitHub issues](https://img.shields.io/github/issues/whiteCube/lingua.svg)](https://github.com/whiteCube/lingua/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/whiteCube/lingua.svg)](https://github.com/whiteCube/lingua/pulls)
+[![license](https://img.shields.io/github/license/whiteCube/lingua.svg)](https://github.com/whiteCube/lingua/blob/master/LICENSE)
 
 This package will convert languages _from and to_ some common formats (ISO codes, W3C standards, PHP localization strings), including human-readable strings.
 
