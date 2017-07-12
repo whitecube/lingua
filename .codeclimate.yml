@@ -1,0 +1,6 @@
+engines:
+  phpmd:
+    enabled: true
+    checks:
+      Controversial/CamelCasePropertyName:
+        enabled: false
