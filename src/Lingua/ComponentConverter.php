@@ -4,11 +4,18 @@ namespace WhiteCube\Lingua;
 
 class ComponentConverter extends Converter
 {
+    /**
+     * @return string
+     */
     public function __toString()
     {
         return $this->original['full'];
     }
 
+    /**
+     * @param $format
+     * @return bool
+     */
     public static function check($format)
     {
         if(!is_array($format)) $format = static::prepare($format);
@@ -16,9 +23,15 @@ class ComponentConverter extends Converter
         return false;
     }
 
+    /**
+     * @throws \Exception
+     */
     public function parse()
     {
         $this->repository = $this->findInRepository();
+        if ($this->repository) {
+            throw new \Exception('Language is not in our repository');
+        }
         $this->fillNameBag('script', 'scripts');
         $this->fillNameBag('country', 'countries');
         $this->iso_639_1 = $this->getIsoValue('iso-639-1');
