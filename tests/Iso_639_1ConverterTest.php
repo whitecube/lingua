@@ -11,6 +11,14 @@ class Iso_639_1ConverterTest extends TestCase
     {
         $this->assertInstanceOf(WhiteCube\Lingua\Service::class, Lingua::createFromISO_639_1('cv'));
     }
+    
+    /** @test */
+    public function can_be_created_from_iso_639_1_with_deprecated_value()
+    {
+        $language = Lingua::createFromISO_639_1('iw');
+        $this->assertInstanceOf(WhiteCube\Lingua\Service::class, $language);
+        $this->assertEquals($language->toISO_639_1(), 'he');
+    }
 
     /** @test */
     public function cannot_be_created_from_invalid_iso_639_1()

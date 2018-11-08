@@ -686,6 +686,9 @@ return [
         'iso-639-2b' => 'heb',
         'iso-639-3' => 'heb',
         'countries' => ['IL' => 'Israel'],
+        'deprecated' => [
+            'iso-639-1' => 'iw'
+        ],
         'scripts' => []
     ],
     [

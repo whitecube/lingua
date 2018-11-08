@@ -15,7 +15,7 @@ class Iso_639_2bConverter extends Converter implements ConverterInterface
         $this->repository = LanguagesRepository::find('iso-639-2b', $this->original);
         $this->iso_639_1 = $this->repository ? $this->repository['iso-639-1'] : '';
         $this->iso_639_2t = $this->repository ? $this->repository['iso-639-2t'] : $this->original;
-        $this->iso_639_2b = $this->original;
+        $this->iso_639_2b = $this->repository ? $this->repository['iso-639-2b'] : '';
         $this->iso_639_3 = $this->repository ? $this->repository['iso-639-3'] : $this->original;
     }
 

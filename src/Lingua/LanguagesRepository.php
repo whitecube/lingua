@@ -29,8 +29,14 @@ class LanguagesRepository
         foreach ($instance->languages as $language) {
             if(!isset($language[$format])) continue;
             if($language[$format] == $value) return $language;
+            if(self::hasDeprecated($language, $format, $value)) return $language;
             if($format == 'iso-639-3' && strpos($language[$format], $value) === 0) return $language;
         }
+    }
+
+    public static function hasDeprecated($language, $format, $value)
+    {
+        return isset($language['deprecated']) && isset($language['deprecated'][$format]) && $language['deprecated'][$format] == $value;
     }
 
     public static function register(array $definition)

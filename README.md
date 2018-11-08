@@ -34,6 +34,8 @@ Available **input and output formats** are:
 
 The Lingua converter works in two stages: first you'll need to instantiate it by providing the original format, than you can convert this string as many times as you want to any of the available formats.
 
+> Note: you can instanciate some languages with their deprecated ISO code. For example, you can instanciate Hebrew with the ISO 639_1 code "iw" instead of "he".
+
 ### Setters
 
 ```php
