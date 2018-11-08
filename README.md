@@ -10,6 +10,9 @@
 
 This package will convert languages _from and to_ some common formats (ISO codes, W3C standards, PHP localization strings), including human-readable strings.
 
+## Installation
+`composer require whitecube/lingua`
+
 ## Content
 
 The package currently supports **over 220 languages**. Most living languages are included, with country codes, names and possible alphabet sets (Latin, Cyrillic, Arabic, ...).
