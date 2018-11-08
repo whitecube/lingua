@@ -1,7 +1,7 @@
 # Lingua - Language Codes Converter
 
-[![Travis](https://img.shields.io/travis/whiteCube/lingua.svg)](https://travis-ci.org/whitecube/lingua)
-[![Code Climate](https://img.shields.io/codeclimate/coverage/github/whiteCube/lingua.svg)](https://codeclimate.com/github/whitecube/lingua)
+[![Travis](https://img.shields.io/travis/whitecube/lingua.svg)](https://travis-ci.org/whitecube/lingua)
+[![Code Climate](https://img.shields.io/codeclimate/coverage/github/whitecube/lingua.svg)](https://codeclimate.com/github/whitecube/lingua)
 [![GitHub release](https://img.shields.io/github/tag/whiteCube/lingua.svg)](https://github.com/whiteCube/lingua/releases)
 [![Packagist](https://img.shields.io/packagist/dt/whiteCube/Lingua.svg)](https://packagist.org/packages/whitecube/lingua)
 [![GitHub issues](https://img.shields.io/github/issues/whiteCube/lingua.svg)](https://github.com/whiteCube/lingua/issues)
