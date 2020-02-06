@@ -19,14 +19,14 @@ namespace WhiteCube\Lingua;
  * @method self fromISO_639_3(string $string)
  * @method self fromPHP(string $string)
  * @method self fromW3C(string $string)
- * @method string toName(string $string)
- * @method string toNative(string $string)
- * @method string toISO_639_1(string $string)
- * @method string toISO_639_2b(string $string)
- * @method string toISO_639_2t(string $string)
- * @method string toISO_639_3(string $string)
- * @method string toPHP(string $string)
- * @method string toW3C(string $string)
+ * @method string toName()
+ * @method string toNative()
+ * @method string toISO_639_1()
+ * @method string toISO_639_2b()
+ * @method string toISO_639_2t()
+ * @method string toISO_639_3()
+ * @method string toPHP()
+ * @method string toW3C()
  */
 class Service
 {
