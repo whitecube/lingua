@@ -1,7 +1,25 @@
-<?php 
+<?php
 
 namespace WhiteCube\Lingua;
 
+/**
+ * @method static fromName(string $string)
+ * @method static fromNative(string $string)
+ * @method static fromISO_639_1(string $string)
+ * @method static fromISO_639_2b(string $string)
+ * @method static fromISO_639_2t(string $string)
+ * @method static fromISO_639_3(string $string)
+ * @method static fromPHP(string $string)
+ * @method static fromW3C(string $string)
+ * @method string toName(string $string)
+ * @method string toNative(string $string)
+ * @method string toISO_639_1(string $string)
+ * @method string toISO_639_2b(string $string)
+ * @method string toISO_639_2t(string $string)
+ * @method string toISO_639_3(string $string)
+ * @method string toPHP(string $string)
+ * @method string toW3C(string $string)
+ */
 class Service
 {
     static protected $defaultFormat = 'w3c';
@@ -59,7 +77,7 @@ class Service
     /**
     * Guesses the given format and returns a converter instance
     * @param string $code
-    * @return this
+    * @return static
     */
     static function create(string $code)
     {
@@ -121,7 +139,7 @@ class Service
     * Instantiates the right converter for given convertion method
     * @param string $method
     * @param array $arguments
-    * @return this
+    * @return $this
     */
     protected function makeConverter($method, $arguments = [])
     {
