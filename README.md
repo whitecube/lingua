@@ -202,3 +202,7 @@ And of course you can also add new languages to the repository, but only if you'
 Please beware that changing some existing values in the `languages.php` file can result in some PHPUnit test failures, so make sure to run the tests and update them accordingly before submitting your changes. 
 
 Thank you!
+
+## 💖 Sponsorships 
+
+If you are reliant on this package in your production applications, consider [sponsoring us](https://github.com/sponsors/whitecube)! It is the best way to help us keep doing what we love to do: making great open source software.
