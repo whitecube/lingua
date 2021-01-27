@@ -1,6 +1,6 @@
 {
     "name": "whitecube/lingua",
-    "description": "A PHP-7 language codes converter, from and to the most common formats (ISO, W3C, PHP and human-readable names).",
+    "description": "A PHP language codes converter, from and to the most common formats (ISO, W3C, PHP and human-readable names).",
     "keywords": ["localization", "locales", "language", "conversion", "ISO", "codes", "BCP-47", "translation", "translate"],
     "license": "MIT",
     "authors": [
