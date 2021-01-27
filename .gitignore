@@ -3,3 +3,4 @@ composer.lock
 .DS_Store
 build/logs/*
 .idea
+.phpunit.result.cache
