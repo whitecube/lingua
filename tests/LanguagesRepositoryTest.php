@@ -8,7 +8,7 @@ class LanguageRespositoryTest extends TestCase
 {
     protected $buffer;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->buffer = file_get_contents('./languages.php');
     }
@@ -28,7 +28,7 @@ class LanguageRespositoryTest extends TestCase
         $this->assertEquals('whi', Lingua::createFromName('whitecube')->toISO_639_3());
     }
 
-    public function tearDown()
+    public function tearDown(): void
     {
         file_put_contents('./languages.php', $this->buffer);
     }

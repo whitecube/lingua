@@ -1,28 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit backupGlobals="false"
-         backupStaticAttributes="false"
-         colors="true"
-         convertErrorsToExceptions="true"
-         convertNoticesToExceptions="true"
-         convertWarningsToExceptions="true"
-         processIsolation="false"
-         stopOnFailure="false"
-         bootstrap="vendor/autoload.php"
+<phpunit
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  colors="true"
+  bootstrap="vendor/autoload.php"
+  xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd"
 >
-
-    <logging>
-        <log type="coverage-clover" target="build/logs/clover.xml" />
-    </logging>
-
-    <filter>
-        <whitelist>
-            <directory>src/Lingua</directory>
-        </whitelist>
-    </filter>
-
-    <testsuites>
-        <testsuite name="Lingua Test Suite">
-            <directory>tests</directory>
-        </testsuite>
-    </testsuites>
+  <coverage>
+    <include>
+      <directory>src/Lingua</directory>
+    </include>
+    <report>
+      <clover outputFile="build/logs/clover.xml"/>
+    </report>
+  </coverage>
+  <logging/>
+  <testsuites>
+    <testsuite name="Lingua Test Suite">
+      <directory>tests</directory>
+    </testsuite>
+  </testsuites>
 </phpunit>
