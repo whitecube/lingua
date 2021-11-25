@@ -13,7 +13,7 @@ class LanguagesRepository
 
     public function __construct()
     {
-        $this->path = realpath(__DIR__ . '/../../languages.php');
+        $this->path = __DIR__ . '/../../languages.php';
         $this->languages = $this->loadRepository();
     }
 
@@ -56,7 +56,7 @@ class LanguagesRepository
 
     protected function loadRepository()
     {
-        if(!$this->path) {
+        if(false === @file_get_contents($this->path)) {
             throw new \Exception('Lingua\'s languages repository could not be loaded');
         }
         return include($this->path);
